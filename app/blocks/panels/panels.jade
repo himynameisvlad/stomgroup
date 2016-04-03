@@ -1,0 +1,423 @@
+//auto modal
+
+.auto-modal
+	.auto-modal__container.clearfix
+		a(href="#").auto-modal__close.auto-modal__form-close
+		.auto-modal__header
+			svg(stroke="#00aeef" fill="#e7e9e8" stroke-width="5" width="30" height="30")
+				use(xlink:href="assets/images/icons.svg#icon-corner")
+			h5 Здравствуйте! <br>Рассчитать Вам стоимость <br>лечения прямо сейчас?
+			p Иванова И.Р., главный врач стоматологической <br>клиники “Дентмастер” г. Омск
+		.auto-modal__form.clearfix
+			.auto-modal__form-vars
+				a(href="#").auto-modal__form-yes.btn.blue-btn Да
+				a(href="#").auto-modal__form-no.auto-modal__form-close Нет
+			.auto-modal__form-self.hidden
+				form(autocomplete="off")
+					.field
+						label(for="phone-10") Введите свой телефон для связи: <span class="">+7 (912) 777 77 77</span>
+						input(type="text" name="phone" required id="phone-10")
+					input(type="hidden" name="from" value="Авто поп-ап")
+					button.btn(type="submit") Рассчитать за 1 минуту
+
+
+
+//auto modal end
+
+
+//menu-panel
+div(class="cd-panel from-left menu-panel")
+		header(class="cd-panel-header")
+			a(href="#0" class="cd-panel-close") Close
+
+		div(class="cd-panel-container")
+			div(class="cd-panel-content")
+				ul.main-menu
+					li.main-menu__item
+						a.main-menu__link(href=".header") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-home"></use></svg> Главная
+					li.main-menu__item
+						a.services-panel-anchor.main-menu__link(href="") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-note2"></use></svg> Услуги и цены
+					li.main-menu__item
+						a.main-menu__link(href=".docs") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-users"></use></svg> Врачи
+					li.main-menu__item
+						a.main-menu__link(href=".testims") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-chat"></use></svg> Отзывы
+					li.main-menu__item
+						a.main-menu__link(href=".photo") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-camera"></use></svg> Фото
+					li.main-menu__item
+						a.why-panel-anchor.main-menu__link(href="") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-star"></use></svg> Почему мы
+					li.main-menu__item
+						a.stom-panel-anchor.main-menu__link(href="") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-notebook"></use></svg> Посоветовться со стоматологом
+					li.main-menu__item
+						a.sign-panel-anchor.main-menu__link(href="", data-from="Записаться на приём из меню") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-pen"></use></svg> Записаться на приём
+					li.main-menu__item
+						a.main-menu__link(href=".contacts") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-marker"></use></svg> Контакты и режим работы
+//menu-panel end
+
+//Services submenu-panel
+div(class="cd-panel from-right services-panel submenu-panel")
+		header(class="cd-panel-header")
+			a(href="#0" class="cd-panel-close") Close
+
+		div(class="cd-panel-container")
+			div(class="cd-panel-content")
+				ul.main-menu
+					li.main-menu__item
+						a.main-menu__link(href=".service") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-note2"></use></svg> Все услуги и цены
+					li.main-menu__item
+						a.main-menu__link(href=".calc") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-calculator"></use></svg> Калькулятор стоимости
+					li.main-menu__item
+						a.main-menu__link(href=".sales") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-star"></use></svg> Акции
+					li.main-menu__item
+						a.main-menu__link(href=".credit") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-piggy"></use></svg> Рассрочка
+					li.main-menu__item
+						a.main-menu__link(href=".complex") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-look"></use></svg> Бесплатное комплексное обследование
+					li.main-menu__item
+						a.main-menu__link(href=".return") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-ribbon"></use></svg> Возврат 13% от стоимости
+//Services submenu-panel end
+
+
+//why submenu-panel
+div(class="cd-panel from-right why-panel submenu-panel")
+		header(class="cd-panel-header")
+			a(href="#0" class="cd-panel-close") Close
+
+		div(class="cd-panel-container")
+			div(class="cd-panel-content")
+				ul.main-menu
+					li.main-menu__item
+						a.main-menu__link(href=".why") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-star"></use></svg> Цифры и факты о нас
+					li.main-menu__item
+						a.main-menu__link(href=".equip") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-science"></use></svg> Оборудование
+					li.main-menu__item
+						a.main-menu__link(href=".tech") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-study"></use></svg> Технологии
+					li.main-menu__item
+						a.main-menu__link(href=".achievs") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-cup"></use></svg> Сертификаты, награды, лицензии
+//why submenu-panel end
+
+
+//stom submenu-panel
+div(class="cd-panel from-right stom-panel submenu-panel")
+		header(class="cd-panel-header")
+			a(href="#0" class="cd-panel-close") Close
+
+		div(class="cd-panel-container")
+			div(class="cd-panel-content")
+				ul.main-menu
+					li.main-menu__item
+						a.callback-panel-anchor.main-menu__link(href="") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-call"></use></svg> Соединить по телефону за 24 секунды
+					li.main-menu__item
+						a.main-menu__link(href=".advice") <svg width="30" class="main-menu__link-icon" fill="#fff" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-notebook"></use></svg> Скачать мини-книгу 28 советов
+//stom submenu-panel end
+
+
+
+//Law panel
+div(class="cd-panel from-right law-panel")
+		header(class="cd-panel-header")
+			a(href="#" class="back-btn") <svg width="26" fill="#111" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+			a(href="#0" class="cd-panel-close") Close
+
+		div(class="cd-panel-container")
+			div(class="cd-panel-content")
+				div(class="block-title")
+					div(class="block-title")
+						svg(width="14" height="15")
+							use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-info")
+					h4 <span>Юридическая информация</span>
+					p 
+						|Реквизиты компании: <br>
+						|Стоматологическая клиника “Дентмастер” <br>
+						|ООО “Юридическое название компании” <br>
+						|Юридический адрес: <br>
+						|Фактический адрес: <br>
+						|Далее все реквизиты <br>
+					p.lic Лицензии: <br>номера лицензий, даты, <br>перечень услуг <br><div class="gallery"><a href="assets/images/docs/others/lic1.jpg">Сканы лицензий</a><a href="assets/images/docs/others/lic2.jpg" class="hidden"></a><a href="assets/images/docs/others/lic3.jpg" class="hidden"></a></div>
+					p
+						|Адреса и телефоны контролирующих органов: <br>
+						|здесь их адреса, телефоны и наименования <br>
+					p
+						|Режим работы организации: <br>
+						|здесь режим работы <br>
+					p
+						|Режим работы медицинских работников: <br>
+						|здесь режимы работы <br>
+					p
+						|Условия предоставления услуг и порядок оплаты: <br>
+						|здесь информация
+
+//Law panel end
+
+
+//sign panel
+div(class="cd-panel from-right sign-panel")
+		header(class="cd-panel-header")
+			a(href="#" class="back-btn") <svg width="26" fill="#111" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+			a(href="#0" class="cd-panel-close") Close
+
+		div(class="cd-panel-container")
+			div(class="cd-panel-content")
+				div(class="block-title")
+					div(class="block-title")
+						svg(width="14" height="15")
+							use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-pen")
+					h4 <span>Запись на приём</span>
+					h3 <span class="bold-text">Запишитесь на приём без очереди<br class="hidden-xs"> и на удобное время:</span>
+					form(autocomplete="off")
+						.field
+							label(for="phone-1") Введите свой телефон для связи: <span class="">например,+7 (912) 777 77 77</span>
+							input(type="text" name="phone" required id="phone-1") 
+						.field
+							label(for="time-1") Введите желаемые дату и время: <span class="">например, завтра, в 18.30</span>
+							input(type="text" name="time" id="time-1")
+						input(type="hidden" name="from")
+						button(type="submit") Записаться
+//sign panel end
+
+//admin panel
+div(class="cd-panel from-right admin-panel")
+		header(class="cd-panel-header")
+			a(href="#" class="back-btn") <svg width="26" fill="#111" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+			a(href="#0" class="cd-panel-close") Close
+
+		div(class="cd-panel-container")
+			div(class="cd-panel-content")
+				div(class="block-title")
+					div(class="block-title")
+						svg(width="14" height="15")
+							use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-call")
+					h4 <span>Соеднить с администратором</span>
+					h3 <span class="bold-text">Соединим с администратором <br class="hidden-xs"> прямо сейчас за 24 секунды</span>
+					form(autocomplete="off")
+						.field
+							label(for="phone-2") Введите свой телефон для связи: <span class="">например,+7 (912) 777 77 77</span>
+							input(type="text" name="phone" required id="phone-2") 
+						input(type="hidden" name="from")
+						button(type="submit") Записаться
+//admin panel end
+
+//cost panel
+div(class="cd-panel from-right cost-panel")
+		header(class="cd-panel-header")
+			a(href="#" class="back-btn") <svg width="26" fill="#111" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+			a(href="#0" class="cd-panel-close") Close
+
+		div(class="cd-panel-container")
+			div(class="cd-panel-content")
+				div(class="block-title")
+					div(class="block-title")
+						svg(width="14" height="15")
+							use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-calculator")
+					h4 <span>Расчитать стоимость</span>
+					h3 <span class="bold-text">Рассчитаем предварительную стоимость  <br class="hidden-xs"> лечения по телефону в течение 1 минуты</span>
+					p.sub-title
+						|Чтобы более точно назвать предварительную стоимость, мы зададим Вам несколько уточняющих вопросов <br class="visible-lg">
+						|по состоянию зубов и пожеланиям. И тут же назовём стоимость. Соединение с администратором произойдет автоматически <br class="visible-lg">
+						|и моментально(в рабочее время), и уже через 1 минуту Вы будете знать стоимость лечения для Вашей ситуации
+				form(autocomplete="off")
+					.field
+						label(for="phone-3") Введите свой телефон для связи: <span class="">например,+7 (912) 777 77 77</span>
+						input(type="text" name="phone" required id="phone-3") 
+					input(type="hidden" name="from")
+					button(type="submit") Записаться
+				p.post-form
+					|Если сейчас ночь или нерабочее время, <br>
+					|то мы перезвоним Вам в ближайщее рабочее время
+//cost panel end
+
+
+//servey panel
+div(class="cd-panel from-right servey-panel")
+		header(class="cd-panel-header")
+			a(href="#" class="back-btn") <svg width="26" fill="#111" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+			a(href="#0" class="cd-panel-close") Close
+
+		div(class="cd-panel-container")
+			div(class="cd-panel-content")
+				div(class="block-title")
+					div(class="block-title")
+						svg(width="14" height="15")
+							use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-look")
+					h4 <span>Комплексное обследование</span>
+					h3 <span class="bold-text">Запишитесь на бесплатное комплексное обследование  <br class="hidden-xs"> прямо сейчас в 1 клик</span>
+					p.sub-title
+						|Чтобы более точно назвать предварительную стоимость, мы зададим Вам несколько уточняющих вопросов <br class="visible-lg">
+						|по состоянию зубов и пожеланиям. И тут же назовём стоимость. Соединение с администратором произойдет автоматически <br class="visible-lg">
+						|и моментально(в рабочее время), и уже через 1 минуту Вы будете знать стоимость лечения для Вашей ситуации 
+				form(autocomplete="off")
+					.field
+						label(for="phone-4") Введите свой телефон для связи: <span class="">например,+7 (912) 777 77 77</span>
+						input(type="text" name="phone" required id="phone-4") 
+					.field
+						label(for="time-4") Введите желаемые дату и время: <span class="">например, завтра, в 18.30</span>
+						input(type="text" name="time" id="time-4")
+					input(type="hidden" name="from")
+					button(type="submit") Записаться
+//servey panel end
+
+//doc panel
+div(class="cd-panel from-right doc-panel")
+		header(class="cd-panel-header")
+			a(href="#" class="back-btn") <svg width="26" fill="#111" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+			a(href="#0" class="cd-panel-close") Close
+
+		div(class="cd-panel-container")
+			div(class="cd-panel-content")
+				div(class="block-title")
+					div(class="block-title")
+						svg(width="14" height="15")
+							use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-user")
+					h4 <span>Посоветоваться с врачом</span>
+					h3 <span class="bold-text">Посоветуйтесь с врачом по телефону: <br class="hidden-xs">соединим прямо сейчас за 24 секунды</span>
+				form(autocomplete="off")
+					.field
+						label(for="phone-5") Введите свой телефон для связи: <span class="">например,+7 (912) 777 77 77</span>
+						input(type="text" name="phone" required id="phone-5") 
+					input(type="hidden" name="from")
+					button(type="submit") Соединить прямо сейчас
+//doc panel end
+
+
+//brochure panel
+div(class="cd-panel from-right brochure-panel")
+		header(class="cd-panel-header")
+			a(href="#" class="back-btn") <svg width="26" fill="#111" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+			a(href="#0" class="cd-panel-close") Close
+
+		div(class="cd-panel-container")
+			div(class="cd-panel-content")
+				div(class="block-title")
+					div(class="block-title")
+						svg(width="14" height="15")
+							use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-ribbon")
+					h4 <span>Скачать брошюру</span>
+					h3 <span class="bold-text">Скачайте брошюру “как вернуть 13% от стоимости лечения” <br class="hidden-xs">прямо сейчас в 1 клик</span>
+					p.sub-title
+						|По закону Вы имеете право вернуть 13% от стоимости лечения. Но что кокретно сделать для этого многим неизвестно <br class="visible-lg">
+						|или непонятно. Мы написали простую и пошаговую инструкцию. И делимся с Вами. <br class="visible-lg">
+						|Сразу после заполнения формы откроется страница с брошюрой и другими советами для скачивания
+				form(autocomplete="off")
+					.field
+						label(for="phone-6") Введите свой телефон для связи: <span class="">например,+7 (912) 777 77 77</span>
+						input(type="text" name="phone" required id="phone-6")
+					input(type="hidden" name="from")
+					button(type="submit") Скачать
+//brochure panel end
+
+//advice panel
+div(class="cd-panel from-right advice-panel")
+		header(class="cd-panel-header")
+			a(href="#" class="back-btn") <svg width="26" fill="#111" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+			a(href="#0" class="cd-panel-close") Close
+
+		div(class="cd-panel-container")
+			div(class="cd-panel-content")
+				div(class="block-title")
+					div(class="block-title")
+						svg(width="14" height="15")
+							use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-notebook")
+					h4 <span>Скачать советы стоматолога</span>
+					h3 <span class="bold-text">Скачайте мини-книгу “28 советов опытного стоматолога” <br class="hidden-xs">прямо сейчас в 1 клик</span>
+					p.sub-title
+						|Часто вопросы с зубами застают врасплох. Что делать если вдруг заболел зуб? Что делать, если кровоточат дёсны? Какую <br class="visible-lg">
+						|коронку выбрать при протезировании? Как выбрать брекеты и насолько удобны и безопасны невидимые брекеты? <br class="visible-lg">
+						|И десятки других вопросов, на которые мы подготовили для Вас понятные и простые ответы. Сохраняйте и пользуйтесь:
+				form(autocomplete="off")
+					.field
+						label(for="phone-7") Введите свой телефон для связи: <span class="">например,+7 (912) 777 77 77</span>
+						input(type="text" name="phone" required id="phone-7")
+					input(type="hidden" name="from")
+					button(type="submit") Скачать
+//advice panel end
+
+//sale panel
+div(class="cd-panel from-right sale-panel")
+		header(class="cd-panel-header")
+			a(href="#" class="back-btn") <svg width="26" fill="#111" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+			a(href="#0" class="cd-panel-close") Close
+
+		div(class="cd-panel-container")
+			div(class="cd-panel-content")
+				div(class="block-title")
+					div(class="block-title")
+						svg(width="14" height="15")
+							use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-piggy")
+					h4 <span>Акции</span>
+					h3 <span class="bold-text">Узнайте, какие акции действуют именно сейчас <br class="hidden-xs">и сколько Вы сможете сэкономить, уже через 1 минуту</span>
+				form(autocomplete="off")
+					.field
+						label(for="phone-11") Введите свой телефон для связи: <span class="">например,+7 (912) 777 77 77</span>
+						input(type="text" name="phone" required id="phone-11")
+					input(type="hidden" name="from")
+					button(type="submit") Узнать
+//sale panel end
+
+//testim panel
+div(class="cd-panel from-right testim-panel")
+		header(class="cd-panel-header")
+			a(href="#" class="back-btn") <svg width="26" fill="#111" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+			a(href="#0" class="cd-panel-close") Close
+
+		div(class="cd-panel-container")
+			div(class="cd-panel-content")
+				div(class="block-title")
+					div(class="block-title")
+						svg(width="14" height="15")
+							use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-comment")
+					h4 <span>Оставить отзыв</span>
+					h3 <span class="bold-text">Ваши отзывы помогают нам становиться лучше <br class="hidden-xs">с каждым днём:</span>
+				form(autocomplete="off")
+					.field
+						label(for="phone-8") Введите свой телефон для связи: <span class="">например,+7 (912) 777 77 77</span>
+						input(type="text" name="phone" required id="phone-8")
+					.field
+						label(for="review-8") Напишите свой отзыв:  
+						input(type="text" name="review" id="review-8") 
+					input(type="hidden" name="from")
+					button(type="submit") Отправить
+//testim panel end
+
+
+//callback panel
+div(class="cd-panel from-right callback-panel")
+		header(class="cd-panel-header")
+			a(href="#" class="back-btn") <svg width="26" fill="#111" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+			a(href="#0" class="cd-panel-close") Close
+
+		div(class="cd-panel-container")
+			div(class="cd-panel-content")
+				div(class="block-title")
+					div(class="block-title")
+						svg(width="14" height="15")
+							use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-phone")
+					h4 <span>Обратный звонок</span>
+					h3 <span class="bold-text">Перезвоним Вам за 24 секунды и ответим на все вопросы. <br class="hidden-xs">Если уже поздно: то в ближайше рабочее время</span>
+				form(autocomplete="off")
+					.field
+						label(for="phone-9") Введите свой телефон для связи: <span class="">например,+7 (912) 777 77 77</span>
+						input(type="text" name="phone" required id="phone-9")
+					input(type="hidden" name="from")
+					button(type="submit") Перезвоните мне
+//callback panel end
+
+
+//credit panel
+div(class="cd-panel from-right credit-panel")
+		header(class="cd-panel-header")
+			a(href="#" class="back-btn") <svg width="26" fill="#111" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+			a(href="#0" class="cd-panel-close") Close
+
+		div(class="cd-panel-container")
+			div(class="cd-panel-content")
+				div(class="block-title")
+					div(class="block-title")
+						svg(width="14" height="15")
+							use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-piggy")
+					h4 <span>Консультация по рассрочке</span>
+					h3 <span class="bold-text">Расскажем подробнее о возможностях рассрочки <br class="hidden-xs">и вместе с Вами подберём самый удобный вариант</span>
+				form(autocomplete="off")
+					.field
+						label(for="phone-10") Введите свой телефон для связи: <span class="">например,+7 (912) 777 77 77</span>
+						input(type="text" name="phone" required id="phone-10")
+					input(type="hidden" name="from")
+					button(type="submit") Проконсультироваться
+//credit panel end

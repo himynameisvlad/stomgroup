@@ -1,0 +1,59 @@
+.post-img
+  margin-top 60px
+
+  br
+    +between(300px, 1200px)
+      display none
+
+  img
+    margin-top 80px
+    +mobile()
+      margin-top 20px
+
+  h5
+    color $main-clr
+    margin 30px 0
+    rems(24px)
+
+  p
+    light()
+    line-height 1.6
+    rems(16px)
+    &:first-child
+      margin 0
+    & + p
+      margin-top 20px
+
+  .btns
+    margin-top 30px
+    +below(520px)
+      text-align center
+
+    a
+      float left
+
+    .ghost-btn
+      padding 20px 60px
+      +below(520px)
+        padding 20px 60px
+        width 100%
+    .empty-btn
+      color $main-clr
+      padding 20px 25px
+      +below(520px)
+        padding 20px 0
+        margin-top: 20px
+        width 100%
+
+      &:hover
+        text-decoration underline
+  .gallery
+    float left
+    padding-top: 20px
+    +below(520px)
+      width 100%
+      text-align: center
+      height 60px
+      
+    .empty-btn
+      float none

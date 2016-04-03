@@ -1,0 +1,645 @@
+doctype
+html(lang='ru')
+	block head
+		- var pageName = 'index'
+		- var pageTitle = "Стоматология Дентмастер"
+	include ../blocks/head/head
+	body#body
+		include ../blocks/panels/panels
+		.wrapper
+			//header
+			header.header
+				.top-bar
+					.container
+						.row
+							.col-sm-4.col-md-4.col-xs-5
+								a.top-bar__menu-anchor(href="#")
+									svg(class="top-bar__menu-icon" width="28" height="30")
+										use(xlink:href="assets/images/icons.svg#icon-menu")
+									|Меню
+							.col-sm-4.col-md-4.col-md-offset-4.col-sm-offset-4.col-xs-7.pull-right.clearfix
+								a(href="#", data-from="Обратный телефон. Топ бар").top-bar__phone.top-bar__phone-desktop.callback-panel-anchor
+									svg(class="top-bar__phone-icon" width="20" height="20")
+										use(xlink:href="assets/images/icons.svg#icon-call")
+									|8 (3812) 47 26 56
+								a(href="tel:83812472656").top-bar__phone.top-bar__phone-mobile
+									svg(class="top-bar__phone-icon" width="20" height="20")
+										use( xlink:href="assets/images/icons.svg#icon-call")
+									|8 (3812) 47 26 56
+				.header__content
+					.container
+						.row
+							.col-xs-12
+								.header__main-logo
+									img(src="assets/images/logo.png", alt="Main logo")
+								h1
+									|<span>Лечение зубов в Омске в день обращения от 1700 руб</span><br>
+									|под микроскопом Carl Zeiss в 4 руки<br class="hidden-xs">
+									|на европейском оборудовании с гарантией до 7 лет
+								.header__btns
+									a(href="#", data-from="Посоветоваться со специалистом. 1 экран").sign-panel-anchor.btn.ghost-btn Запишитесь на приём без очереди
+									a(href="#", data-from="Рассчитайте стоимость за 15 секунд. 1 экран").cost-panel-anchor.btn.white-btn Рассчитайте стоимость за 15 секунд
+				ul.header__links
+					li.header__links-complex
+						a(href="#", data-from="Бесплатное комплексное обследование. 1 экран").servey-panel-anchor
+							|<svg class="plus" width="18" fill="#fff" height="18"><use  xlink:href="assets/images/icons.svg#icon-plus"></use></svg>
+							|<svg class="arr" width="20" stroke="white" fill="transparent" height="53"><use xlink:href="assets/images/icons.svg#icon-line-1"></use></svg>
+							| Бесплатное комплексное обследование
+							| <span class="dashed"></span>
+					li.header__links-sign
+						a(href="#", data-from="Записаться на приём без очереди. 1 экран").sign-panel-anchor 
+							|<svg class="plus" width="18" fill="#fff" height="18"><use xlink:href="assets/images/icons.svg#icon-plus"></use></svg>
+							|<svg class="arr" width="20" stroke="white" fill="transparent" height="53"><use xlink:href="assets/images/icons.svg#icon-line-2"></use></svg>
+							| Записаться на приём без очереди
+							| <span class="dashed"></span>
+					li.header__links-reviews
+						a(href=".testims") 
+							|<svg class="plus" width="18" fill="#fff" height="18"><use xlink:href="assets/images/icons.svg#icon-plus"></use></svg>
+							|<svg class="arr" width="27" stroke="white" fill="transparent" height="41"><use xlink:href="assets/images/icons.svg#icon-line-3"></use></svg>
+							| Читать отзывы пациентов
+							| <span class="dashed"></span>
+					li.header__links-doc
+						a(href=".docs") 
+							|<svg class="plus" width="18" fill="#fff" height="18"><use xlink:href="assets/images/icons.svg#icon-plus"></use></svg>
+							|<svg class="arr" width="27" stroke="white" fill="transparent" height="41"><use xlink:href="assets/images/icons.svg#icon-line-3"></use></svg>
+							| Выбрать врача
+							| <span class="dashed"></span>
+					li.header__links-phone
+						a(href="#", data-from="Посоветоваться по телефону. 1 экран").doc-panel-anchor
+							|<svg class="plus" width="18" fill="#fff" height="18"><use xlink:href="assets/images/icons.svg#icon-plus"></use></svg>
+							|<svg class="arr" width="67" stroke="white" fill="transparent" height="48"><use xlink:href="assets/images/icons.svg#icon-line-4"></use></svg>
+							| Посоветоваться по телефону
+							| <span class="dashed"></span>
+					li.header__links-calc
+						a(href="#").cost-panel-anchor
+							|<svg class="plus" width="18" fill="#fff" height="18"><use xlink:href="assets/images/icons.svg#icon-plus"></use></svg>
+							|<svg class="arr" width="17" stroke="white" fill="transparent" height="48"><use xlink:href="assets/images/icons.svg#icon-line-5"></use></svg>
+							| Калькулятор стоимости
+							| <span class="dashed"></span>
+				.header__bg
+				
+			//header end
+			
+			//service
+			include ../blocks/service/service
+			//service end
+			
+			//calculator
+			section.calc
+				.container
+					.row
+						.col-sm-5
+							img.cost-panel-anchor.calc__image(src="assets/images/iphone-calc.png", alt="", data-from="Экран Калькулятор стоимости лечения")
+						.col-sm-7
+							.calc__content
+								h5 <span class="bold-text">Калькулятор</span><br class="visible-xs"> стоимости лечения
+								p Узнайте уже через несколько секунд предварительную <br class="hidden-xs">стоимость лечения для вашей ситуации
+								.calc__content-btn
+									a(href="#" data-type="Открыть калькулятор", data-from="Экран Калькулятор стоимости лечения").cost-panel-anchor.btn.ghost-btn Открыть калькулятор
+				.calc__background
+			//calculator end
+			
+			//docs
+			include ../blocks/docs/docs
+			//docs end
+			
+
+			//testims
+			include ../blocks/testims/testims
+			//testims end
+			
+			//photo
+			section.photo
+				.container
+					.row
+						.col-xs-12
+							div(class="block-title service__title")
+								div(class="block-title service__title-icon")
+									svg(width="12" height="12")
+										use(xlink:href="assets/images/icons.svg#icon-camera")
+								h4 <span>Фото клиники</span>
+								h3 <span class="bold-text">Уютно, чисто и душевно. </span> В доброй уважительной <br class="visible-lg"> атмосфере и <span class="bold-text">лечиться приятнее</span>
+				.photo__grid-nav
+					ul
+						li
+							a(href="#" data-filter="*").active Наша стоматология
+						//- li
+						//- 	a(href="#" data-filter=".arch") Клиника на Бульваре Архитекторов, 3
+						//- li
+						//- 	a(href="#" data-filter=".arch-2") Клиника на Такойто улице, 8
+						//- li
+						//- 	a(href="#" data-filter=".vrachi") Врачи и пациенты
+						//- li
+						//- 	a(href="#" data-filter=".conf") Мы на конференции в Мюнхене
+				.photo__grid
+					.photo-sizer
+					.photo__grid-item.default-item
+						a.image-link(href="assets/images/gallery/1.jpg")
+							.photo__grid-hover
+								svg(width="50" height="50" fill="#fff" class="photo__grid-icon")
+									use(xlink:href="assets/images/icons.svg#icon-iconsearch")
+							img(src="assets/images/gallery/m1.jpg", alt="")
+					.photo__grid-item.default-item
+						a.image-link(href="assets/images/gallery/2.jpg")
+							.photo__grid-hover
+								svg(width="50" height="50" fill="#fff" class="photo__grid-icon")
+									use(xlink:href="assets/images/icons.svg#icon-iconsearch")
+							img(src="assets/images/gallery/m2.jpg", alt="")
+					.photo__grid-item.default-item
+						a.image-link(href="assets/images/gallery/3.jpg")
+							.photo__grid-hover
+								svg(width="50" height="50" fill="#fff" class="photo__grid-icon")
+									use(xlink:href="assets/images/icons.svg#icon-iconsearch")
+							img(src="assets/images/gallery/m3.jpg", alt="")
+					.photo__grid-item.default-item
+						a.image-link(href="assets/images/gallery/4.jpg")
+							.photo__grid-hover
+								svg(width="50" height="50" fill="#fff" class="photo__grid-icon")
+									use(xlink:href="assets/images/icons.svg#icon-iconsearch")
+							img(src="assets/images/gallery/m4.jpg", alt="")
+					.photo__grid-item.default-item
+						a.image-link(href="assets/images/gallery/5.jpg")
+							.photo__grid-hover
+								svg(width="50" height="50" fill="#fff" class="photo__grid-icon")
+									use(xlink:href="assets/images/icons.svg#icon-iconsearch")
+							img(src="assets/images/gallery/m5.jpg", alt="")
+					.photo__grid-item.default-item
+						a.image-link(href="assets/images/gallery/6.jpg")
+							.photo__grid-hover
+								svg(width="50" height="50" fill="#fff" class="photo__grid-icon")
+									use(xlink:href="assets/images/icons.svg#icon-iconsearch")
+							img(src="assets/images/gallery/m6.jpg", alt="")
+				a.photo__more-btn.more-btn(href="#" data-page="1") <svg width="12" height="14"><use xlink:href="assets/images/icons.svg#icon-bottom"></use></svg> Показать ещё
+				a.photo__less-btn.hidden(href="#") <svg width="12" height="14"><use xlink:href="assets/images/icons.svg#icon-up"></use></svg> Скрыть
+				
+			//photo end
+			
+			//why
+			section.why
+				.container
+					.row
+						.col-xs-12
+							div(class="block-title service__title")
+								div(class="block-title service__title-icon")
+									svg(width="12" height="14")
+										use(xlink:href="assets/images/icons.svg#icon-star")
+								h4 <span>Почему мы</span>
+								h3 <span class="bold-text">1280 сложных имплантаций.</span> 3278 зубных протезов. <br>7 895 вылеченных кариесов. <span class="bold-text">Более 12 978 счастливых улыбок</span>
+						.row
+							.why__list
+								.col-md-4.col-sm-6.col-xs-12.why__list-item
+									svg(width="35" height="33")
+										use(xlink:href="assets/images/icons.svg#icon-diamond")
+									h5 Уникальное диагностическое <br>оборудование Argus Digma
+									p 
+										|Качество лечения в первую очередь <br>
+										|зависит от точной диагностики. Чтобы <br>
+										|не испортить здоровые зубы. Чтобы <br>
+										|правильно выбрпать  план лечения
+								.col-md-4.col-sm-6.col-xs-12.why__list-item
+									svg(width="36" height="33")
+										use(xlink:href="assets/images/icons.svg#icon-users")
+									h5 Более 12 978 жителей Омска<br> вылечились у нас за 12 лет
+									p 
+										|В городе более 200 стоматологий. <br>
+										|И если более десяти тысяч жителей <br>Омска Выбрали именно нас, <br>
+										|то конечно же это не случайно
+								.col-md-4.col-sm-6.col-xs-12.why__list-item
+									svg(width="36" height="33")
+										use(xlink:href="assets/images/icons.svg#icon-culture")
+									h5 Собственная зуболитейная<br> лаборатория
+									p 
+										|На немецком оборудовании <br>
+										|мы изготавлеиваем зубные протезы беспецендентного качества и точности, <br>
+										|которые легко и быстро пиживаются 
+								.col-md-4.col-sm-6.col-xs-12.why__list-item
+									svg(width="36" height="33")
+										use(xlink:href="assets/images/icons.svg#icon-cup")
+									h5 12 опытных врачей с суммарным <br>стажем 112 лет и 32 наградами
+									p 
+										|Регулярно участвуют в престижных <br>
+										|конференциях в Мюнхене, Москве, <br>
+										|Лондоне. А в Омске проводят обучение <br>
+										|для стоматологов других клиник
+								.col-md-4.col-sm-6.col-xs-12.why__list-item
+									svg(width="36" height="33")
+										use(xlink:href="assets/images/icons.svg#icon-look")
+									h5 Стерилизация инструментов <br>перед вашими глазами
+									p 
+										|Стерилизация инструментов <br>
+										|происходит перед вашими глазами, <br>
+										|поэтому вы можете быть уверены в <br>
+										|безопасности лечения
+								.col-md-4.col-sm-6.col-xs-12.why__list-item
+									svg(width="36" height="33")
+										use(xlink:href="assets/images/icons.svg#icon-help2")
+									h5 Спасаем зубы, приговорённые <br>к удалению
+									p 
+										|Спасаем зубы, которые «приговорили к <br>
+										|удалению». Наши терапевты имеют <br>
+										|большой опыт перелечивания каналов <br>
+										|после неудачного лечения 
+			//why end
+			
+			//sales
+			section.sales
+				.container
+					.row
+						.col-sm-5
+							.sales__image-container
+								img.sale-panel-anchor.sales__image(src="assets/images/tablet.png", alt="", data-from="Экран Акции и спецпредложения")
+						.col-sm-7
+							.sales__content
+								h5 <span class="bold-text">Акции </span><br class="visible-xs"> и спецпредложения
+								p Узнайте, сколько Вы сможете сэкономить на лечении, <br class="hidden-xs">воспользовавшись нашими действующими акциями
+								.calc__content-btn
+									a(href="#" data-type="Узнать про акции", data-from="Экран Акции и спецпредложения").btn.ghost-btn.sale-panel-anchor Узнать про акции
+				.sales__background
+			//sales end
+			
+			//credit
+			section.credit
+				.container
+					.row
+						.col-xs-12
+							div(class="block-title service__title")
+								div(class="block-title service__title-icon")
+									svg(width="12" height="14")
+										use(xlink:href="assets/images/icons.svg#icon-piggy")
+								h4 <span>Рассрочка и кредит</span>
+								h3 <span class="bold-text">Не хватает денег</span> на лечение? Не проблема! <br>Лечитесь <span class="bold-text">в рассрочку без переплат </span>или в кредит до 3-х лет 
+					.row
+						.credit__content.post-img
+							.col-md-push-6.col-md-6
+								img.credit__content-cake(src="assets/images/cake.jpg", alt="")
+							.col-md-pull-6.col-md-6
+								p Программа поддержки населения
+								h5 Рассрочка <span class="bold-text">без первого взноса и без %</span>
+								p 
+									|Иногда бывает сложно разом выделить всю сумму на лечение. <br>
+									|Особенно, если речь идёт о иплантации и протезировании. <br>
+									|Но откладывать в долгий ящик - совсем не решение
+								p
+									|Поэтому мы постарались сделать здоровье для Вас доступнее. <br>
+									|И сейчас Вы можете спокойно вылечить зубы, сделать имплантацию, <br>
+									|протезирование, отбеливание и воспользоваться любыми другими <br>
+									|услугами нашей клиники не платя ни рубля первого взноса
+								p
+									|Рассрочка до 6 месяцев без переплат, без процентов, без первого <br>
+									|взноса. Если ежемесячный платёж нужен ещё меньше: доступен <br>
+									|кредит до 36 месяцев, и он также без первого взноса
+								.btns.clearfix
+									a(href="#", data-from="Рассчитать подробнее. Рассрочка и кредит").credit-panel-anchor.btn.ghost-btn.blue Рассчитать подробнее
+									a(href="#", data-from="Посоветоваться. Рассрочка и кредит").callback-panel-anchor.btn.empty-btn Посоветоваться
+			//credit end
+			
+			//complex
+			section.complex
+				.container
+					.row
+						.col-xs-12
+							div(class="block-title service__title")
+								div(class="block-title service__title-icon")
+									svg(width="12" height="14")
+										use(xlink:href="assets/images/icons.svg#icon-look")
+								h4 <span>Комплексное обследование</span>
+								h3 Запишитесь на <span class="bold-text">бесплатное комплексное обследование, <br>и узнайте всё</span> о состоянии своих зубов и дёсен
+					.row
+						.credit__content.post-img
+							.col-md-6
+								img(src="assets/images/shot.jpg", alt="")
+							.col-md-6
+								p Получите ответы на все сомнения и вопросы
+								h5 <span class="bold-text">Снимок,</span> осмотр, консультация
+								p 
+									|Крайне важно подходить к решению проблем с зубами комплексно. <br>
+									|Для этого недостаточно просто визуально осмотреть проблемный зуб.<br>
+									|Требуется понять состояние всех зубов и снаружи и внутри: здоровы ли <br>
+									|нервы, здоровы ли корни, нет ли проблем с каналами. В порядке ли <br>
+									|дёсны или из-за них часть зубов ослаблены
+								p
+									|При обследовании опытный врач внимательно осмотривает Ваши зубы, <br>
+									|делает необходимый снимок: рентгеновский либо панорамный либо 3D <br>
+									|томографию. Затем, показывая всё на снимке, подробно рассказывает Вам 
+									|о состоянии зубов и полости рта: где какие проблемы, где всё в порядке, 
+									|на что обратить внимание, и все варианты лечения
+								.btns.clearfix
+									a(href="#", data-from="Запишитесь на удобное время. Экран Комплексное обследование").sign-panel-anchor.btn.ghost-btn.blue Запишитесь на удобное время
+									a(href="#", data-from="Посоветуйтесь по телефону. Экран Комплексное обследование").doc-panel-anchor.btn.empty-btn Посоветуйтесь по телефону
+			//complex end
+			
+			//equip
+			section.equip
+				.container
+					.row
+						.col-xs-12
+							div(class="block-title service__title")
+								div(class="block-title service__title-icon")
+									svg(width="12" height="14")
+										use(xlink:href="assets/images/icons.svg#icon-science")
+								h4 <span>Европейское оборудование</span>
+								h3 <span class="bold-text">Стабильно и надёжно.</span> Диагностика и лечение выполняется <br class="hidden-xs">на <span class="bold-text">современном европейском оборудовании</span>
+					.row
+						.col-xs-12
+							.equip__slider
+								.item
+									img(src="assets/images/eq-slide-2.jpg", alt="Панорамные снимки")
+									h6 Панорамные снимки
+									p
+										|Панорамные снимки позволяют <br>
+										|продиагностировать сразу все зубы <br>
+										|и с высокой надёжностью определить состояние <br>
+										|зубов и полости рта. Всего 1 снимок, и Вы <br>
+										|получаете полное понимание с какими зубами <br>
+										|что не так. Где проблемы в нервах, где в корне, <br>
+										|где в дёснах. А где - всё в порядке
+								.item
+									img(src="assets/images/eq-slide-1.jpg", alt="Немецкие стоматологические установки")
+									h6 Немецкие стоматологические установки
+									p
+										|Наши современные стоматологические устнановки <br>
+										|позволяют осуществлять лечение зубов <br>
+										|высочайщей сложности. И благодаря удобному <br>
+										|расположению инструментов стоматолог <br>
+										|полностью сосредоточен на Ваших зубах. <br>
+										|Лечиться в удобном анатомическом кресле <br>
+										|комфортно и спокойно
+								.item
+									img(src="assets/images/eq-slide-3.jpg", alt="Вакумнная стерилизация инструментов")
+									h6 Вакумнная стерилизация инструментов
+									p
+										|Обеспечивает надёжную стерилизацию <br>
+										|стоматологических инструментов, включая <br>
+										|наконечники и боры, и хлопковых тканей. <br>
+										|Обработка паром в условиях вакуума гарантирует <br>
+										|получать высокую степень стерильности <br>
+										|инструментов и обеспечивает <br>
+										|безопасность лечения
+								.item
+									img(src="assets/images/eq-slide-1.jpg", alt="Немецкие стоматологические установки")
+									h6 Немецкие стоматологические установки
+									p
+										|Наши современные стоматологические устнановки <br>
+										|позволяют осуществлять лечение зубов <br>
+										|высочайщей сложности. И благодаря удобному <br>
+										|расположению инструментов стоматолог <br>
+										|полностью сосредоточен на Ваших зубах. <br>
+										|Лечиться в удобном анатомическом кресле <br>
+										|комфортно и спокойно
+								.item
+									img(src="assets/images/eq-slide-3.jpg", alt="Вакумнная стерилизация инструментов")
+									h6 Вакумнная стерилизация инструментов
+									p
+										|Обеспечивает надёжную стерилизацию <br>
+										|стоматологических инструментов, включая <br>
+										|наконечники и боры, и хлопковых тканей. <br>
+										|Обработка паром в условиях вакуума гарантирует <br>
+										|получать высокую степень стерильности <br>
+										|инструментов и обеспечивает <br>
+										|безопасность лечения
+						.col-xs-12
+							.equip__btn
+								a(href="#", data-from="Записаться на приём. Экран Европейское оборудование").sign-panel-anchor.btn.ghost-btn.blue Записаться на приём
+			//equip end
+			
+			//tech
+			section.tech
+				.container
+					.row
+						.col-xs-12
+							div(class="block-title tech__title")
+								div(class="block-title tech__title-icon")
+									svg(width="12" height="14")
+										use(xlink:href="assets/images/icons.svg#icon-study")
+								h4 <span>Современные технологии</span>
+								h3 Идём <span class="bold-text">в ногу со временем </span> и применяем <br class="hidden-xs">современные <span class="bold-text">компьютерые технологии</span>
+					.row
+						.tech__content.post-img
+							.col-md-5.col-md-push-7
+								.tech__content-img
+									img(src="assets/images/mac.jpg", alt="")
+							.col-md-7.col-md-pull-5
+								p Используем новейшие стоматологические программы
+								h5 Обеспечивая <span class="bold-text">филигранную точность</span>
+								p 
+									|Компьютерные технологии позволяют добиться идеальных результатов <br class="visible-lg">
+									|при протезировании, имплантации. Например, “спроектировать” зуб в 3D. <br class="visible-lg">
+									|Сделать его максимально “привычным” и естесственным по форме
+								p
+									|Сделать необходимые расчёты по “посадке” зуба в десну. Рассчитать допустимые <br class="visible-lg">
+									|нагрузки на соседние зубы при протезировании. Посмотреть на себя “будущем”: <br class="visible-lg">
+									|ваша улыбка и фотография после имплантации или протезирования, <br class="visible-lg">
+									|когда все зубы уже на месте. Причём, имено в том оттенке, который Вы выбрали
+								p
+									|Все снимки, история осомтров, история лечения хранятся в электронном виде. <br class="visible-lg">
+									|Поэтому, даже если в следующий раз Вас будет лечить другой врач, <br class="visible-lg">
+									|он глубоко и полностью будет понимать Вашу ситуацию
+								.btns.clearfix
+									a(href="#", data-from="Бесплатная диагностика. Экран Современные технологии").servey-panel-anchor.btn.ghost-btn.blue Бесплатная диагностика
+			//tech end
+			
+			//achievs
+			section.achievs
+				.container
+					.row
+						.col-xs-12
+							div(class="block-title service__title")
+								div(class="block-title service__title-icon")
+									svg(width="12" height="12")
+										use(xlink:href="assets/images/icons.svg#icon-cup")
+								h4 <span>Сертификаты, и награды</span>
+								h3 <span class="bold-text">У каждого врача </span> нашей клиники десятки <br class="visible-lg"> всероссийских и <span class="bold-text">международных сертификатов и наград</span>
+				.achievs__grid-nav.clearfix
+					ul
+						li
+							a(href="#" data-filter="*").active Все награды
+						li
+							a(href="#" data-filter=".gon") Гончарова О. В.
+						li
+							a(href="#" data-filter=".hub") Хубиева А. А.
+						li
+							a(href="#" data-filter=".god") Годинов Р. В.
+						li
+							a(href="#" data-filter=".tolm") Толмосов А.
+						li
+							a(href="#" data-filter=".lic") Лицензии
+				.container
+					.row
+						.col-xs-12
+							.achievs__grid.clearfix
+								.grid-sizer.col-xs-2
+									.achievs__grid-item.gon
+										a.image-link(href="assets/images/docs/1/dip1.jpg")
+											.achievs__grid-hover
+												svg(width="50" height="50" fill="#fff" class="achievs__grid-icon")
+													use(xlink:href="assets/images/icons.svg#icon-iconsearch")
+											img(src="assets/images/docs/1/mdip1.jpg", alt="")
+									.achievs__grid-item.gon
+										a.image-link(href="assets/images/docs/1/dip2.jpg")
+											.achievs__grid-hover
+												svg(width="50" height="50" fill="#fff" class="achievs__grid-icon")
+													use(xlink:href="assets/images/icons.svg#icon-iconsearch")
+											img(src="assets/images/docs/1/mdip2.jpg", alt="")
+									.achievs__grid-item.hub
+										a.image-link(href="assets/images/docs/2/dip1.jpg")
+											.achievs__grid-hover
+												svg(width="50" height="50" fill="#fff" class="achievs__grid-icon")
+													use(xlink:href="assets/images/icons.svg#icon-iconsearch")
+											img(src="assets/images/docs/2/mdip1.jpg", alt="")
+									.achievs__grid-item.hub
+										a.image-link(href="assets/images/docs/2/dip2.jpg")
+											.achievs__grid-hover
+												svg(width="50" height="50" fill="#fff" class="achievs__grid-icon")
+													use(xlink:href="assets/images/icons.svg#icon-iconsearch")
+											img(src="assets/images/docs/2/dip2.jpg", alt="")
+									.achievs__grid-item.god
+										a.image-link(href="assets/images/docs/3/dip1.jpg")
+											.achievs__grid-hover
+												svg(width="50" height="50" fill="#fff" class="achievs__grid-icon")
+													use(xlink:href="assets/images/icons.svg#icon-iconsearch")
+											img(src="assets/images/docs/3/mdip1.jpg", alt="")
+									.achievs__grid-item.tolm
+										a.image-link(href="assets/images/docs/others/dip1.jpg")
+											.achievs__grid-hover
+												svg(width="50" height="50" fill="#fff" class="achievs__grid-icon")
+													use(xlink:href="assets/images/icons.svg#icon-iconsearch")
+											img(src="assets/images/docs/others/mdip1.jpg", alt="")
+									.achievs__grid-item.gon
+										a.image-link(href="assets/images/docs/1/dip3.jpg")
+											.achievs__grid-hover
+												svg(width="50" height="50" fill="#fff" class="achievs__grid-icon")
+													use(xlink:href="assets/images/icons.svg#icon-iconsearch")
+											img(src="assets/images/docs/1/mdip3.jpg", alt="")
+									.achievs__grid-item.gon
+										a.image-link(href="assets/images/docs/1/dip4.jpg")
+											.achievs__grid-hover
+												svg(width="50" height="50" fill="#fff" class="achievs__grid-icon")
+													use(xlink:href="assets/images/icons.svg#icon-iconsearch")
+											img(src="assets/images/docs/1/mdip4.jpg", alt="")
+									.achievs__grid-item.lic
+										a.image-link(href="assets/images/docs/others/lic1.jpg")
+											.achievs__grid-hover
+												svg(width="50" height="50" fill="#fff" class="achievs__grid-icon")
+													use(xlink:href="assets/images/icons.svg#icon-iconsearch")
+											img(src="assets/images/docs/others/mlic1.jpg", alt="")
+									.achievs__grid-item.gon
+										a.image-link(href="assets/images/docs/1/dip5.jpg")
+											.achievs__grid-hover
+												svg(width="50" height="50" fill="#fff" class="achievs__grid-icon")
+													use(xlink:href="assets/images/icons.svg#icon-iconsearch")
+											img(src="assets/images/docs/1/mdip5.jpg", alt="")
+									.achievs__grid-item.gon
+										a.image-link(href="assets/images/docs/1/dip6.jpg")
+											.achievs__grid-hover
+												svg(width="50" height="50" fill="#fff" class="achievs__grid-icon")
+													use(xlink:href="assets/images/icons.svg#icon-iconsearch")
+											img(src="assets/images/docs/1/mdip6.jpg", alt="")
+									.achievs__grid-item.lic
+										a.image-link(href="assets/images/docs/others/lic2.jpg")
+											.achievs__grid-hover
+												svg(width="50" height="50" fill="#fff" class="achievs__grid-icon")
+													use(xlink:href="assets/images/icons.svg#icon-iconsearch")
+											img(src="assets/images/docs/others/mlic2.jpg", alt="")
+						.col-xs-12
+							a.achievs__more-btn.more-btn(href="#" data-page="1") <svg width="12" height="14"><use xlink:href="assets/images/icons.svg#icon-refresh"></use></svg> Показать ещё
+			//achievs end
+			
+			//return
+			section.return
+				.container
+					.row
+						.col-sm-5.clearfix
+							img.brochure-panel-anchor.return__image(src="assets/images/return.png", alt="", data-from="Экран Скачать памятку")
+						.col-sm-7
+							.return__content
+								h5 <span class="bold-text">Вернуть 13%  </span><br class="visible-xs"> от стоимости лечения
+								p По закону Вы можете вернуть обратно 13% от стоимости лечения. <br class="hidden-xs">Сохраните простую пошаговую памятку как это сделать
+								.calc__content-btn
+									a(href="#" data-type="Скачать памятку", data-from="Экран Скачать памятку").brochure-panel-anchor.btn.ghost-btn Скачать памятку
+				.return__background
+			//return end
+			
+			//advice
+			section.advice
+				.container
+					.row
+						.col-xs-12
+							div(class="block-title service__title")
+								div(class="block-title service__title-icon")
+									svg(width="12" height="14")
+										use(xlink:href="assets/images/icons.svg#icon-notebook")
+								h4 <span>Советы стоматолога</span>
+								h3 Скачайте <span class="bold-text">28 главных советов</span> по первой помощи при зубной боли, <br class="hidden-xs">по выбору протезов, пломб, безвредных видов отбеливания
+					.row
+						.advice__content
+							a(href="#", data-from="Экран Советы стоматолога").advice-panel-anchor.btn.ghost-btn.blue Скачать
+							img(src="assets/images/advices.jpg", alt="", data-from="Экран Советы стоматолога").advice-panel-anchor
+			//advice end
+			
+			//map
+			section.map
+				.container
+					.row
+						.col-xs-12
+							div(class="block-title service__title")
+								div(class="block-title service__title-icon")
+									svg(width="12" height="14")
+										use(xlink:href="assets/images/icons.svg#icon-marker")
+								h4 <span>Контакты</span>
+								h3 <span class="bold-text">Приезжайте на бесплатное комплексное обследование</span> и лечение. <br class="hidden-xs">Запишитесь сейчас, чтобы <span class="bold-text">пройти без очереди</span>
+				//.map__container<a class="dg-widget-link" href="http://2gis.ru/stavropol/firm/70000001007391100/center/41.94674491882325,45.074914700988515/zoom/14?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Ставрополя</a><div class="dg-widget-link"><a href="http://2gis.ru/stavropol/firm/70000001007391100/photos/70000001007391100/center/41.94674491882325,45.074914700988515/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.ru/stavropol/center/41.941468,45.073625/zoom/14/routeTab/rsType/bus/to/41.941468,45.073625╎Дентарио, стоматологический центр?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Дентарио, стоматологический центр</a></div><script charset="utf-8" src="http://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"borderColor":"transparent","pos":{"lat":45.074914700988515,"lon":41.94674491882325,"zoom":14},"opt":{"city":"stavropol"},"org":[{"id":"70000001007391100"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+			//map end
+			
+			//contacts
+			section.contacts
+				a(href=".header").top-anchor
+					svg.pull-left(width="52" fill="#fff" height="52")
+						use(xlink:href="assets/images/icons.svg#icon-topanchor")
+				.container
+					.row
+						.col-xs-12
+							h4 <span class="bold-text">Свяжитесь</span> с нами
+					.row
+						.col-md-6
+							.contacts__form
+								p
+									|Хотите записаться на приём или задать вопросы? Оставьте свои <br class="visible-lg">контакты, нажмите кнопку, и мы моментально соединим с <br class="visible-lg">администратором в течение 24 секунд рабочее время:
+								form(action="")
+									label
+										input(type="text" name="name" placeholder="Введите Ваше Имя:  например, Дмитрий Олегович")
+									label
+										input(type="text" name="phone" required placeholder="Введите Ваш Телефон для Связи: например, 8 (912) 999 99 99")
+									label
+										textarea(name="msg", placeholder="Здесь можете оставить дополнительное сообщение: например, хочу записаться к вашему лучшему специалисту на протезирование")
+									input(type="hidden" name="from" value="Соеднинить с администратором. Футер")
+									input(type="submit" value="Соеднинить с администратором").btn.ghost-btn
+						.col-md-6
+							ul.contacts__list
+								li.contacts__list-item.clearfix
+									svg.pull-left(width="52" height="52")
+										use(xlink:href="assets/images/icons.svg#icon-compass")
+									p.pull-left г. Омск, Чехова, 3 <br>09:00 – 20:00 (ВС – выходной)
+								li.contacts__list-item.clearfix
+									svg.pull-left(width="52" height="52")
+										use(xlink:href="assets/images/icons.svg#icon-compass")
+									p.pull-left г. Омск, Бульвар Архитекторов, 14/1 <br>09:00 – 20:00 (ВС – выходной)
+								li.contacts__list-item.clearfix
+									svg.pull-left(width="52" height="52")
+										use(xlink:href="assets/images/icons.svg#icon-botphone")
+									p.pull-left 8 (3812) 47 26 56 <br>8 (904) 326 77 76
+								li.contacts__list-item.clearfix
+									svg.pull-left(width="52" height="52")
+										use(xlink:href="assets/images/icons.svg#icon-botmail")
+									p.pull-left <a href="#" class="sign-panel-anchor" data-from="Записаться на приём без очереди. Футер">Записаться на приём без очереди</a> <br><a href="#" class="doc-panel-anchor" data-from="Посоветоваться со специалистом. Футер">Посоветоваться со специалистом</a>
+					.row
+						.col-xs-12
+							.bottom-info
+								p 
+								|Обращаясь за медицинской услугой, получите предварительную консультацию у  врача. <br>
+								|Политика конфиденциальности: даные не передаются третьим лицам <br>
+								|Стоматологическая клиника “Дентмастер”, г. Омск. <a href="#" class="law-panel-anchor">Юридическая информация</a>
+
+			//contacts end
+		script(src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous")
+		script(src="assets/scripts/owl.carousel.min.js")
+		script(type='text/javascript' src='assets/scripts/build.js')

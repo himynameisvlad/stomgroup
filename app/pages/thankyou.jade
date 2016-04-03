@@ -1,0 +1,46 @@
+doctype
+html(lang='ru')
+	block head
+		- var pageName = 'index'
+		- var pageTitle = "Стоматология Дентмастер"
+	include ../blocks/head/head
+	body.thanks-page
+		.wrapper
+			section.thanks
+				header(class="cd-panel-header")
+					a(href="/" class="back-btn") <svg width="26" fill="#111" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+					a(href="/" class="cd-panel-close") Close
+				.container
+					.row
+						.col-xs-12
+							div(class="block-title service__title")
+								div(class="block-title service__title-icon")
+									svg(width="12" height="14")
+										use(xlink:href="assets/images/icons.svg#icon-calculator")
+								h4 <span>Спасибо</span>
+								h3 <span class="bold-text">Спасибо! Ваша заявка принята. <br>Мы свяжемся с Вами в ближайшее время</span> 
+						.col-xs-12
+							a(href="/").btn.ghost-btn.blue Вернуться на сайт
+			section.city
+				.container
+					.row
+						.col-xs-12
+							.files
+								h5 Файлы для скачивания:
+								img(src="assets/images/files.png", alt="")
+								p Мини-книга ”<span class="bold-text">28 главных</span> советов опытного стоматолога”
+								a(href="/13.doc",target="_blank").btn.ghost-btn Начать скачивание
+								img(src="assets/images/return.png" alt="")
+								p Памятка “<span class="bold-text">Как Вернуть 13% </span> от стоимости лечения”
+								a(href="/13.doc",target="_blank").btn.ghost-btn Начать скачивание
+				.map__container<a class="dg-widget-link" href="http://2gis.ru/stavropol/firm/70000001007391100/center/41.94674491882325,45.074914700988515/zoom/14?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Ставрополя</a><div class="dg-widget-link"><a href="http://2gis.ru/stavropol/firm/70000001007391100/photos/70000001007391100/center/41.94674491882325,45.074914700988515/zoom/17?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=photos">Фотографии компании</a></div><div class="dg-widget-link"><a href="http://2gis.ru/stavropol/center/41.941468,45.073625/zoom/14/routeTab/rsType/bus/to/41.941468,45.073625╎Дентарио, стоматологический центр?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Дентарио, стоматологический центр</a></div><script charset="utf-8" src="http://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"borderColor":"transparent","pos":{"lat":45.074914700988515,"lon":41.94674491882325,"zoom":14},"opt":{"city":"stavropol"},"org":[{"id":"70000001007391100"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+				.bottom
+					.container
+						.row
+							.col-xs-12
+								.thanks-contacts
+									img(src="assets/images/logo.png", alt="")
+									ul.thanks-contacts-list
+										li <svg width="52" height="52"><use xlink:href="assets/images/icons.svg#icon-compass"></use></svg><p>г. Ставрополь, ул. Октябрьская, 235И<br>09:00 – 20:00 (ВС – выходной)</p>
+										li <svg width="52" height="52"><use xlink:href="assets/images/icons.svg#icon-botphone"></use></svg><p>8 (3812) 47 26 56 <br>8 (904) 326 77 76</p>
+									a(href="/").btn.ghost-btn Вернуться на сайт

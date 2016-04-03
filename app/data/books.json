@@ -1,0 +1,274 @@
+ 
+  "books": [
+     
+      "title": "JavaScript. Сильные стороны",
+      "author": "Дуглас Крокфорд",
+      "language": "ru",
+      "link": "http://www.ozon.ru/context/detail/id/20217226/",
+      "thumb": "crockford-javascript.jpg",
+      "categories": ["javascript"],
+      "difficulty": ["advanced"]
+     ,
+     
+      "title": "Сила JavaScript. 68 способов эффективного использования JS",
+      "author": "Дэвид Херман",
+      "language": "ru",
+      "link": "http://www.ozon.ru/context/detail/id/20413530/",
+      "thumb": "js-68-ways.jpg",
+      "categories": ["javascript"],
+      "difficulty": ["advanced"]
+     ,
+     
+      "title": "Отзывчивый веб-дизайн",
+      "author": "Итан Маркотт",
+      "language": "ru",
+      "link": "http://www.ozon.ru/context/detail/id/8747299/",
+      "thumb": "responsive-webdesign.jpg",
+      "categories": ["css", "rwd"],
+      "difficulty": ["advanced"]
+     ,
+     
+      "title": "Exploring ES6",
+      "author": "Аксель Раушмайер",
+      "language": "en",
+      "link": "http://exploringjs.com/",
+      "thumb": "exploring-es6.jpg",
+      "categories": ["JavaScript"],
+      "difficulty": ["advanced"]
+     ,
+     
+      "title": "Разработка Backbone.js приложений",
+      "author": "Эдди Османи",
+      "language": "ru",
+      "link": "http://www.ozon.ru/context/detail/id/25167553/",
+      "thumb": "osmani-backbone.jpg",
+      "categories": ["Backbone"],
+      "difficulty": ["beginner", "advanced"]
+     ,
+     
+      "title": "JavaScript. Подробное руководство",
+      "author": "Дэвид Флэнаган",
+      "language": "ru",
+      "link": "http://www.ozon.ru/context/detail/id/19677670/",
+      "thumb": "flanagan-javascript-definitive-guide.jpg",
+      "categories": ["JavaScript"],
+      "difficulty": ["beginner"]
+     ,
+     
+      "title": "JavaScript. Карманный справочник",
+      "author": "Дэвид Флэнаган",
+      "language": "ru",
+      "link": "http://www.ozon.ru/context/detail/id/31100361/",
+      "thumb": "flanagan-javascript-pocket-guide.jpg",
+      "categories": ["JavaScript"],
+      "difficulty": ["beginner", "advanced"]
+     ,
+     
+      "title": "Learning JavaScript",
+      "author": "Шэлли Пауэрс",
+      "language": "en",
+      "link": "http://shop.oreilly.com/product/9780596521882.do",
+      "thumb": "powers-learning-javascript.jpg",
+      "categories": ["JavaScript"],
+      "difficulty": ["beginner"]
+     ,
+     
+      "title": "Большая книга CSS3",
+      "author": "Дэвид Макфарланд",
+      "language": "ru",
+      "link": "http://www.ozon.ru/context/detail/id/24493075/",
+      "thumb": "css3-the-missing-manual.jpg",
+      "categories": ["css"],
+      "difficulty": ["beginner"]
+     ,
+     
+      "title": "CSS. Каскадные таблицы стилей",
+      "author": "Эрик А. Мейер",
+      "language": "ru",
+      "link": "http://www.ozon.ru/context/detail/id/3881079/",
+      "thumb": "meyer-css.jpg",
+      "categories": ["css"],
+      "difficulty": ["beginner"]
+     ,
+     
+      "title": "High Performance Web Sites",
+      "author": "Стив Саудерс",
+      "language": "en",
+      "link": "http://shop.oreilly.com/product/9780596529307.do",
+      "thumb": "high-perfomance-websites.jpg",
+      "categories": ["perfomance"],
+      "difficulty": ["beginner", "advanced"]
+     ,
+     
+      "title": "Even Faster Web Sites",
+      "author": "Стив Саудерс",
+      "language": "en",
+      "link": "http://shop.oreilly.com/product/9780596522315.do",
+      "thumb": "even-faster-websites.jpg",
+      "categories": ["perfomance"],
+      "difficulty": ["beginner", "advanced"]
+     ,
+     
+      "title": "Пуленепробиваемый веб-дизайн",
+      "author": "Дэн Сидерхолм",
+      "language": "ru",
+      "link": "http://www.ozon.ru/context/detail/id/10793233/",
+      "thumb": "bulletproof-web-design.jpg",
+      "categories": ["css"],
+      "difficulty": ["advanced"]
+     ,
+     
+      "title": "Изучаем HTML5",
+      "author": "Брюс Лоусон, Реми Шарп",
+      "language": "ru",
+      "link": "http://www.ozon.ru/context/detail/id/7622650/",
+      "thumb": "introducing-html5.jpg",
+      "categories": ["html5"],
+      "difficulty": ["advanced"]
+     ,
+     
+      "title": "CSS3 для веб-дизайнеров",
+      "author": "Дэн Сидерхолм",
+      "language": "ru",
+      "link": "http://www.ozon.ru/context/detail/id/19431033/",
+      "thumb": "css3-for-web-designers.jpg",
+      "categories": ["css"],
+      "difficulty": ["beginner"]
+     ,
+     
+      "title": "HTML5 для веб-дизайнеров",
+      "author": "Кит Джереми",
+      "language": "ru",
+      "link": "http://www.ozon.ru/context/detail/id/19431055/",
+      "thumb": "html5-for-web-designers.jpg",
+      "categories": ["html5"],
+      "difficulty": ["beginner"]
+     ,
+     
+      "title": "Сначала мобильные!",
+      "author": "Люк Вроблевски",
+      "language": "ru",
+      "link": "http://www.ozon.ru/context/detail/id/15708347/",
+      "thumb": "mobile-first.jpg",
+      "categories": ["CSS"],
+      "difficulty": ["advanced"]
+     ,
+     
+      "title": "JavaScript Design Patterns",
+      "author": "Эдди Османи",
+      "language": "en",
+      "link": "http://addyosmani.com/resources/essentialjsdesignpatterns/book/",
+      "thumb": "learning-javascript-design-patterns.jpg",
+      "categories": ["javascript"],
+      "difficulty": ["advanced"]
+     ,
+     
+      "title": "CSS3. Руководство разработчика",
+      "author": "Питер Гастон",
+      "language": "ru",
+      "link": "http://www.ozon.ru/context/detail/id/8465610/",
+      "thumb": "css3-developers-guide.jpg",
+      "categories": ["css"],
+      "difficulty": ["advanced"]
+     ,
+     
+      "title": "JavaScript. Оптимизация производительности",
+      "author": "Николас Закас",
+      "language": "ru",
+      "link": "http://www.ozon.ru/context/detail/id/18421547/",
+      "thumb": "high-perfomance-javascript.jpg",
+      "categories": ["javascript", "perfomance"],
+      "difficulty": ["advanced"]
+     ,
+     
+      "title": "JavaScript. Шаблоны",
+      "author": "Стоян Стефанов",
+      "language": "ru",
+      "link": "http://www.ozon.ru/context/detail/id/6287517/",
+      "thumb": "javascript-patterns.jpg",
+      "categories": ["javascript"],
+      "difficulty": ["advanced"]
+     ,
+     
+      "title": "Паттерны для масштабируемых JavaScript-приложений",
+      "author": "Эдди Османи",
+      "language": "ru",
+      "link": "http://largescalejs.ru/",
+      "thumb": "largescale-js.jpg",
+      "categories": ["javascript"],
+      "difficulty": ["advanced"]
+     ,
+     
+      "title": "You Don't Know JS: Up & Going",
+      "author": "Кайл Симпсон",
+      "language": "en",
+      "link": "https://github.com/getify/You-Dont-Know-JS/blob/master/up%20&%20going/README.md#you-dont-know-js-up--going",
+      "thumb": "ydkjs-up-and-going.jpg",
+      "categories": ["javascript"],
+      "difficulty": ["beginner"]
+     ,
+     
+      "title": "You Don't Know JS: Scope & Closures",
+      "author": "Кайл Симпсон",
+      "language": "en",
+      "link": "https://github.com/getify/You-Dont-Know-JS/blob/master/scope%20&%20closures/README.md#you-dont-know-js-scope--closures",
+      "thumb": "ydkjs-scope-and-closures.jpg",
+      "categories": ["javascript"],
+      "difficulty": ["beginner"]
+     ,
+     
+      "title": "You Don't Know JS: this & Object Prototypes",
+      "author": "Кайл Симпсон",
+      "language": "en",
+      "link": "https://github.com/getify/You-Dont-Know-JS/blob/master/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes",
+      "thumb": "ydkjs-this-and-op.jpg",
+      "categories": ["javascript"],
+      "difficulty": ["beginner"]
+     ,
+     
+      "title": "You Don't Know JS: Types & Grammar",
+      "author": "Кайл Симпсон",
+      "language": "en",
+      "link": "https://github.com/getify/You-Dont-Know-JS/blob/master/types%20&%20grammar/README.md#you-dont-know-js-types--grammar",
+      "thumb": "ydkjs-types-and-grammar.jpg",
+      "categories": ["javascript"],
+      "difficulty": ["beginner"]
+     ,
+     
+      "title": "You Don't Know JS: Async & Performance",
+      "author": "Кайл Симпсон",
+      "language": "en",
+      "link": "https://github.com/getify/You-Dont-Know-JS/blob/master/async%20&%20performance/README.md#you-dont-know-js-async--performance",
+      "thumb": "ydkjs-async-and-perfomance.jpg",
+      "categories": ["javascript"],
+      "difficulty": ["advanced"]
+     ,
+     
+      "title": "CSS Secrets",
+      "author": "Лиа Веру",
+      "language": "en",
+      "link": "http://shop.oreilly.com/product/0636920031123.do",
+      "thumb": "css-secrets.jpg",
+      "categories": ["css"],
+      "difficulty": ["advanced"]
+     ,
+     
+      "title": "Bootstrap",
+      "author": "Джейк Спарлок",
+      "language": "en",
+      "link": "http://shop.oreilly.com/product/0636920027867.do",
+      "thumb": "bootstrap.jpg",
+      "categories": ["css", "rwd"],
+      "difficulty": ["advanced"]
+     ,
+     
+      "title": "JavaScript Enlightenment",
+      "author": "Коди Линдли",
+      "language": "en",
+      "link": "http://www.javascriptenlightenment.com/",
+      "thumb": "javascript-enlightenment.jpg",
+      "categories": ["javascript"],
+      "difficulty": ["beginner"]
+     
+  ]
+ 

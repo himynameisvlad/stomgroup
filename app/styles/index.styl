@@ -1,0 +1,1162 @@
+@import 'helpers/variables'
+@import 'helpers/sprites'
+@import 'helpers/mixins'
+
+@import 'vendor/owl.carousel.css'
+@import 'vendor/magnific.css'
+
+@import "../blocks/panels/*"
+@import "../blocks/block-header/*"
+@import "../blocks/post-img/*"
+@import "../blocks/carousels/*"
+
+rupture.mobile-cutoff = $mobile-cutoff
+rupture.desktop-cutoff = $desktop-cutoff
+
+
+//Header
+
+.header
+	height 1440px
+	background-color #021521
+	border-bottom 5px solid $main-clr
+	color #fff
+	position relative
+	overflow hidden
+	z-index 1
+	+mobile()
+		height 900px
+	+tablet()
+		height 1400px
+	+between(1921px, 2570px)
+		height 1700px
+	+between(1280px, 1380px)
+		height 1160px
+	+below(1280px)
+		height 1080px
+	+below(1024px)
+		height 1030px
+	+below(990px)
+		height 1150px
+
+	&.down
+		& + .top-bar
+			top 0
+
+
+	&__bg
+		position absolute
+		bottom 0
+		left 50%
+		transform: translateX(-50%)
+		z-index -1
+		background-image url('../images/header-bg.jpg')
+		background-color #03364e
+		background-repeat no-repeat
+		background-position 50% bottom
+		background-size cover
+		width 100%
+		height 100%
+		max-width 2560px
+		+mobile()
+			background-size contain
+	&__content
+		margin-top 20px
+
+	&__links
+		position relative
+		width 100%
+		height 100%
+		+below(780px)
+			display none !important
+
+
+		li
+			position absolute
+
+		a
+			color #fff
+			position relative
+			display: inline-table
+			z-index 10
+			text-decoration: underline dotted red
+			rems(14px)
+			&:after
+					content: ""
+					width: 90%
+					border-bottom 1px dotted #fff
+					display table-caption
+					vertical-align: baseline
+					position: relative
+					top 1.8em
+					left 2em
+					opacity 0
+			&:hover
+				&:after
+					opacity 1
+			.plus
+				position relative
+				top 4px
+				margin-right 4px
+			.arr
+				position absolute
+
+		&-complex
+			top 100px
+			left 24%
+			+between(1921px, 2570px)
+				left 24%
+				top 180px
+			+between(1441px, 1601px)
+				top 200px
+			+between(1380px, 1440px)
+				top 250px
+			+between(1280px, 1380px)
+				top 90px
+			+below(1280px)
+				top 50px
+			+below(1024px)
+				top  50px
+				left 20%
+			.arr
+				top 20px
+				left -12px
+		&-sign
+			top 280px
+			left 20%
+			a:after
+				width 88%
+			+between(1921px, 2570px)
+				left 20%
+				top 440px
+			+between(1441px, 1601px)
+				top 350px
+			+between(1380px, 1440px)
+				top 380px
+			+between(1280px, 1380px)
+				top 200px
+			+below(1280px)
+				top 180px
+			+below(1024px)
+				top 160px
+				left 17%
+			.arr
+				top 14px
+				left 8px
+		&-reviews
+			top 590px
+			left 23%
+			a:after
+				width 85%
+			+between(1921px, 2570px)
+				top 910px
+			+between(1441px, 1601px)
+				top 630px
+			+between(1380px, 1440px)
+				top 630px
+			+between(1280px, 1380px)
+				top 420px
+			+below(1280px)
+				top 420px
+			+below(1024px)
+				top 340px
+			.arr
+				top 12px
+				left -34px
+		&-doc
+			top 160px
+			right 32%
+			a:after
+				width 78%
+			+between(1921px, 2570px)
+				right 36%
+			+between(1441px, 1601px)
+				top 240px
+			+between(1380px, 1440px)
+				top 330px
+			+between(1280px, 1380px)
+				top 140px
+				right 29%
+			+below(1280px)
+				top 140px
+				right 27%
+			+below(1024px)
+				right 23%
+				top 90px
+			.arr
+				top 12px
+				left -38px
+		&-phone
+			top 360px
+			right 25%
+			a:after
+				width 87%
+			+between(1921px, 2570px)
+				right 28%
+				top 580px
+			+between(1441px, 1601px)
+				top 420px
+				right 23%
+			+between(1380px, 1440px)
+				top 460px
+				right 24%
+			+between(1280px, 1380px)
+				top 250px
+				right 20%
+			+below(1280px)
+				top 250px
+				right 20%
+			+below(1024px)
+				right 15%
+				top 190px
+			.arr
+				top 28px
+				left -58px
+
+		&-calc
+			top 600px
+			right 18%
+			a:after
+				width 85%
+			+between(1921px, 2570px)
+				right 22%
+				top 900px
+			+between(1441px, 1601px)
+				top 630px
+			+between(1380px, 1440px)
+				top 640px
+			+between(1280px, 1380px)
+				top 410px
+				right 16%
+			+below(1280px)
+				top 400px
+				right 16%
+			+below(1024px)
+				right 11%
+				top 330px
+			.arr
+				top 28px
+				left -10px
+
+
+.top-bar
+		height 53px
+		line-height 53px
+		padding 20px 0 26px
+		clearfix()
+
+		&.animateIt
+			height 53px
+			background: #fff
+			line-height 53px
+			position:fixed
+			top:-60px
+			left: 0
+			right: 0
+			z-index 10
+			padding 0 0 20px
+			border-bottom 3px solid $main-clr
+			box-shadow 0 4px 5px rgba(0,0,0,.08)
+			transition:0.4s top cubic-bezier(.3, .73, .3, .74)
+			.top-bar__menu-anchor
+			.top-bar__phone
+				color #06293e
+				svg
+					fill #06293e
+
+		&__menu-anchor,
+		&__phone
+			color #fff
+			line-height 53px
+			rems(22px)
+			extra()
+			&:hover
+				text-decoration none
+			+mobile()
+				rems(14px)
+
+		&__phone
+			display none
+			+mobile()
+				float right
+			&-desktop
+				float right
+				+above(500px)
+					display block
+			&-mobile
+				+between(0px, 500px)
+					display block
+
+
+		&__menu-icon,
+		&__phone-icon
+			fill #fff
+			position relative
+			top 7px
+			margin-right 12px
+
+		&__phone-icon
+			top 2px
+
+
+
+			i
+				rems(20px)
+				top 2px
+
+
+.header
+
+		&__main-logo
+			text-align center
+			semi-bold()
+			.logo
+				fill #fff
+				margin-bottom 12px
+
+		h1
+			text-align center
+			line-height 1.3
+			margin 30px 0 40px
+			rems(32px)
+			+mobile()
+				rems(24px)
+			span
+				bold()
+
+		&__btns
+			text-align center
+
+			.btn
+				display inline-block
+				padding 30px 35px
+
+				& + .btn
+					margin-left 12px
+					padding 30px 26px
+					+mobile()
+						margin-left 0
+						margin-top 20px
+
+
+
+
+//Header end
+
+//Service
+
+.service
+	background-color #fff
+	background-image url('../images/service-bg.jpg')
+	background-repeat no-repeat
+	background-position right -180px top 140px
+	padding 65px 0 90px
+	+between(768px, 1200px)
+		background-position right -460px top 140px
+	+between(0px, 768px)
+		background #fff
+
+	&__content
+		padding-top 100px
+		+between(0px, 980px)
+			padding-top 30px
+
+	&__menu
+
+		&-item
+			display block
+			& + .service__menu-item
+				.service__menu-link
+					border-top 1px solid rgba(217,217,217, .43)
+
+		&-link
+			color #111
+			width 210px
+			line-height 50px
+			height 50px
+			padding-left 5px
+			display block
+			+between(0px, 980px)
+				width 100%
+				overflow hidden
+			&.active
+				background-color $main-clr
+				color #fff
+				position relative
+				+between(0px, 768px)
+					background-color transparent
+					color #111
+				&:after
+					content ''
+					display: block
+					width 37px
+					height 37px
+					position absolute
+					right -18px
+					top 6px
+					background $main-clr
+					transform rotate(-45deg)
+					border-radius 4px
+					+between(0px, 768px)
+						display none
+				.blue
+					color #fff
+					+between(0px, 768px)
+						color $main-clr
+	&__panel
+		transition opacity 1s
+		+above(760px)
+			display none !important
+			opacity 0
+			visibility hidden
+			header
+				display none
+		+between(0px, 760px)
+			position: fixed;
+			top: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			visibility: hidden;
+			-webkit-transition: visibility 0s 0.6s;
+			-moz-transition: visibility 0s 0.6s;
+			transition: visibility 0s 0.6s;
+		&.toggled
+			+above(760px)
+				visibility visible
+				display block !important
+				opacity 1
+
+		&.mob
+			+between(0px, 760px)
+				visibility visible
+				position: fixed;
+				z-index: 19;
+				-webkit-transition: visibility 0s 0s;
+				-moz-transition: visibility 0s 0s;
+				transition: visibility 0s 0s;
+			.service__panel-container
+				-webkit-transform: translate3d(0, 0, 0);
+				-moz-transform: translate3d(0, 0, 0);
+				-ms-transform: translate3d(0, 0, 0);
+				-o-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+				-webkit-transition-delay: 0s;
+				-moz-transition-delay: 0s;
+				transition-delay: 0s;
+		&-container
+			+between(0px, 760px)
+				right 0
+				transform: translate3d(100%, 0, 0);
+				text-align center
+				padding 60px 30px 20px
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				background: #fff;
+				z-index: 1;
+				-webkit-transition-property: -webkit-transform;
+				-moz-transition-property: -moz-transform;
+				transition-property: transform;
+				-webkit-transition-duration: 0.3s;
+				-moz-transition-duration: 0.3s;
+				transition-duration: 0.3s;
+				-webkit-transition-delay: 0.3s;
+				-moz-transition-delay: 0.3s;
+				transition-delay: 0.3s;
+				overflow-y: scroll;
+
+
+		&-block
+			margin-bottom 40px
+			
+			
+
+		h5
+			color $main-clr
+			margin-bottom 24px
+			bold()
+			rems(16px)
+		p
+			line-height 1.7
+			position relative
+			padding-left 20px
+			rems(14px)
+			
+			svg
+				position: absolute
+				left 0
+				top 2px
+
+
+.prices-list
+	height 200px
+	overflow hidden
+	transition height 3s
+	+between(0px, 760px)
+		text-align left
+		overflow-y: scroll
+	&.toggled
+		height 100%
+		max-height 800px
+
+	&__item
+		display block
+		rems(14px)
+		svg
+			margin-right 4px
+			position absolute
+			top 4px
+			left 14px
+		p
+			padding-left 18px
+
+		& + li
+			margin-top 17px
+
+	&__link
+		color #111
+		display inline-table
+		&:after
+			content ""
+			width 100%
+			border-bottom 1px dotted #111
+			display table-caption
+			vertical-align: baseline
+			position: relative
+			top 1.3em
+			left 0
+			opacity 1
+		+between(0px, 760px)
+			margin-left 18px
+		&:hover
+			text-decoration none
+			color inherit
+			&:after
+				opacity 0
+
+.more-prices
+.less-prices
+	color #111
+	margin-top 20px
+	margin-right 30px
+	display inline-table
+	rems(14px)
+	&:after
+		content ""
+		width 100%
+		border-bottom 1px dotted #111
+		display table-caption
+		vertical-align: baseline
+		position: relative
+		top 1.3em
+		left 0
+	+between(0px, 760px)
+		display none
+	&:hover
+		text-decoration none
+		color inherit
+		&:after
+			opacity 0
+
+
+
+
+//Service end
+
+
+//Calc
+
+.calc
+	position relative
+	+mobile()
+		padding-bottom 120px
+
+	&__image
+		max-width 100%
+		height auto
+		float right
+		+mobile()
+			float none
+
+.calc__content
+.sales__content
+.return__content
+	margin-top 180px
+	color #fff
+	+mobile()
+		margin-top 30px
+		text-align center
+
+	h5
+		rems(32px)
+	p
+		margin 18px 0 28px
+		line-height 1.6
+	.btn
+		padding: 20px 78px;
+		margin-top 20px
+		rems(18px)
+		+mobile()
+			rems(16px)
+	&-btn
+		margin-top 46px
+
+
+.calc__background
+.sales__background
+.return__background
+	display block
+	position absolute
+	left 0
+	right 0
+	top 90px
+	bottom 90px
+	z-index -999
+	background: rgb(0,174,239)
+	background: -moz-linear-gradient(45deg,  rgba(0,174,239,1) 0%, rgba(9,126,170,1) 100%)
+	background: -webkit-linear-gradient(45deg,  rgba(0,174,239,1) 0%,rgba(9,126,170,1) 100%)
+	background: linear-gradient(45deg,  rgba(0,174,239,1) 0%,rgba(9,126,170,1) 100%)
+	+tablet()
+		bottom 0
+	+mobile()
+		bottom 20px
+
+.calc__background
+	bottom 125px
+//Calc end
+
+
+//Photo
+
+.photo
+	padding-top 100px
+	padding-bottom 65px
+	position relative
+	height auto
+
+	&__grid
+		clearfix()
+
+		&-item
+			width 33.3%
+			float left
+			position relative
+			+mobile()
+				width 50%
+			&:hover
+				.photo__grid-hover
+					display: block
+
+			a
+				display block
+			img
+				width 100%
+		
+		&-hover
+			background -moz-linear-gradient(45deg, rgba(0,174,239,0.9) 0%, rgba(19,49,77,0.9) 100%)
+			background -webkit-linear-gradient(45deg, rgba(0,174,239,0.9) 0%,rgba(19,49,77,0.9) 100%)
+			background linear-gradient(45deg, rgba(0,174,239,0.9) 0%,rgba(19,49,77,0.9) 100%)
+			filter unquote('progid:DXImageTransform.Microsoft.gradient( startColorstr="#00aeef", endColorstr="#13314d",GradientType=1 )')
+			height 100%
+			width 100%
+			position: absolute
+			top 0
+			left 0
+			bottom 0
+			display: none
+		&-icon
+			width 50px
+			height 50px
+			display: block
+			position: absolute
+			top 50%
+			margin-top -25px
+			left 50%
+			margin-left -25px
+
+		&-nav
+			ul
+				text-align center
+				padding 40px 0
+			li
+				display inline-block
+				margin 0 20px
+				+mobile()
+					display block
+					margin 22px 0
+
+			a
+				color #000
+				&.active
+					color $main-clr
+	.more-btn
+		position absolute
+		width 100%
+		background-color rgba(255,255,255,.85)
+		bottom 65px
+		text-align center
+		padding 20px 0
+		line-height 25px
+		color #111
+		transition background-color .3s
+		&:hover
+			background-color #fff
+
+		svg
+			margin-right 8px
+
+.photo-sizer
+	width 33.3%
+
+.photo__less-btn
+	position: absolute
+	display block
+	width 100%
+	bottom 0
+	text-align: center
+	line-height 25px
+	color #111
+	padding: 20px 0;
+	
+	svg
+		margin-right 8px
+
+//Photo end
+
+
+//Why
+
+.why
+	padding 90px 0 80px
+
+
+	&__list
+		color $main-clr
+		text-align center
+
+		&-item
+			margin-top 60px
+
+		svg
+			fill $main-clr
+
+		h5
+			margin 16px 0 14px
+			line-height 1.3
+			rems(16px)
+			bold()
+		p
+			color #111
+			line-height 1.3
+
+
+//Why end
+
+
+//Sales
+
+.sales
+	position relative
+
+	&__image-container
+		position relative
+
+	&__image
+		position absolute
+		right 0
+		top 60px
+		height 451px
+		width 867px
+		max-width none
+		+mobile()
+			max-width 100%
+			height auto
+
+	&__content
+		margin-bottom 180px
+		+tablet()
+			margin 550px 0 140px
+		+mobile()
+			margin 300px 0 120px
+
+		.btn
+			padding 20px 91px
+
+//Sales end
+
+
+//Credit
+
+.credit
+	padding 60px 0
+	
+	&__content
+		
+		&-cake
+			display block
+			margin 0 auto
+
+	br
+		+mobile()
+			display none
+
+//Credit end
+
+//Complex
+
+.complex
+	padding 60px 0
+
+	br
+		+mobile()
+			display none
+
+	img
+		margin-top 40px
+
+	.ghost-btn.btn
+		padding 20px 30px
+
+
+//Complex end
+
+
+//Tech
+
+.tech
+	padding 60px 0
+
+	&__content
+		&-img
+			position relative
+			height 100%
+			+tablet()
+				height 360px
+			+mobile()
+				height 160px
+		img
+			position absolute
+			left 0
+			bottom -507px
+			width 892px
+			max-width none
+			+tablet()
+				width 600px
+				bottom 40px
+			+mobile()
+				bottom 0
+				width 300px
+
+//Tech end
+
+//Achievs
+
+.achievs
+	padding 120px 0 60px
+
+	&__grid
+		margin 0 auto
+
+	&__grid-nav
+		padding 30px 0
+
+		ul
+			text-align center
+
+			li
+				display inline-block
+				margin 0 10px
+				+mobile()
+					display block
+					margin 22px 0
+
+				a
+					color #000
+					thin()
+					+mobile()
+						margin 12px 0
+						display inline-block
+					&.active
+						color $main-clr
+
+	&__grid-item
+		margin 10px
+		float: left;
+		width: 160px
+		height: 160px
+		box-shadow 0 7px 20px rgba(0,0,0,.1)
+		position relative
+		overflow hidden
+		transition box-shadow .3s
+		+mobile()
+			width 106px
+			height 106px
+		&:hover
+			box-shadow 0 7px 40px rgba(0,0,0,.5)
+			.achievs__grid-hover
+				display: block
+		img
+			width 100%
+			height 160px
+	
+	&__grid-hover
+		background -moz-linear-gradient(45deg,  rgba(0,152,161,0.9) 0%, rgba(19,49,77,0.9) 100%)
+		background -webkit-linear-gradient(45deg,  rgba(0,152,161,0.9) 0%,rgba(19,49,77,0.9) 100%)
+		background linear-gradient(45deg,  rgba(0,152,161,0.9) 0%,rgba(19,49,77,0.9) 100%)
+		filter unquote('progid:DXImageTransform.Microsoft.gradient( startColorstr="#e60098a1", endColorstr="#e613314d",GradientType=1 )')
+		position absolute
+		top 0
+		left 0
+		bottom 0
+		right 0
+		width 100%
+		height 100%
+		display: none
+		opacity .9
+	
+	&__grid-icon
+		width 20px
+		height 20px
+		position: absolute
+		top 50%
+		margin-top -10px
+		left 50%
+		margin-left -10px
+
+
+	&__more-btn
+		box-shadow 0 7px 20px rgba(0,0,0,.1)
+		margin-top 5px
+		padding 15px 0
+		text-align center
+		width 93%
+		display block
+		margin 0 auto
+		+below(990px)
+			width 97%
+		+below(768px)
+			width 517px
+		+below(560px)
+			width 340px
+		svg
+			margin-right 4px
+			color #111
+
+//Achievs end
+
+//Return
+
+.return
+	position relative
+
+	&__image
+		float right
+		+mobile()
+			float none
+			display block
+			margin 0 auto
+			width 311px
+
+	&__content
+		margin 120px 0 170px
+		+mobile()
+			margin-bottom 120px
+
+		.btn
+			padding 20px 94px
+
+	&__background
+		top 40px
+
+//Return end
+
+
+//Advice end
+
+.advice
+	padding-top 65px
+
+	&__content
+		text-align center
+
+		.btn
+			display inline-block
+			padding 26px 123px
+			margin-top 30px
+			rems(18px)
+
+
+		img
+			display block
+			margin 40px auto 0
+
+
+//Advice end
+
+//Map 
+
+.map
+	r
+		
+
+	&__container
+		overflow hidden
+		height 765px
+		margin-top 40px
+		position: relative
+		+below(520px)
+			height 295px
+	iframe
+		border 0
+		width 100%
+		height 768px
+		+below(520px)
+			height 300px
+
+//Map end
+
+//Contacts
+
+.contacts
+	padding 150px 0 20px
+	background $main-clr url('../images/footer-bg.jpg') no-repeat 0 0
+	background-size cover
+	color #fff
+	position relative
+	
+	.top-anchor
+		position: absolute
+		bottom 350px
+		right 10%
+		z-index 10
+		+below(1070px)
+			bottom 50px
+		+below(520px)
+			bottom 140px
+			right 5%
+
+	h4
+		rems(32px)
+
+
+	&__form
+		p
+			line-height 1.4
+			margin-top 16px
+
+		form
+			margin-top 20px
+
+		label
+			display block
+			& + label
+				margin-top 14px
+
+		input[type="text"]
+		textarea
+			background-color transparent
+			border-bottom 2px solid #fff
+			padding 12px 0
+			line-height 1.5
+			width 100%
+			max-width 440px
+			placeholder-color-size(#fff, 14px)
+			&:focus
+				border-color $main-clr
+				placeholder-color($main-clr)
+		textarea
+			height 90px
+			+below(480px)
+				height 120px
+
+		input[type="submit"]
+			border 0
+			padding 20px 50px
+			margin-top 20px
+
+
+
+	&__list
+		padding-top 60px
+
+		&-item
+			display block
+
+			& + li
+				margin-top 20px
+
+			svg
+				fill #fff
+				margin-right 18px
+				+mobile()
+					display none
+
+			p
+				line-height 1.6
+
+				a
+					display inline-block
+					color #fff
+					border-bottom 1px dotted #fff
+					&:first-child
+						margin-bottom 4px
+					&:hover
+						border-color transparent
+
+.bottom-info
+	text-align center
+	margin-top 70px
+	line-height 1.6
+	light()
+	rems(11px)
+
+	a
+		color inherit
+		border-bottom 1px dotted #fff
+		&:hover
+			border-bottom none
+
+
+//Contacts end
+
+//magnific popup custom
+.mfp-wrap
+	perspective 2000px
+
+.mfp-container
+	.mfp-content
+		transform: rotateY(40deg);
+		transform-style: preserve-3d;
+		transition all .2s
+		opacity 0
+
+.mfp-s-ready
+	.mfp-content
+		opacity 1
+		transform rotateY(0)
+
+.mfp-removing
+	.mfp-content
+		opacity 0
+		transform rotateY(-40deg)
+		
+.mfp-arrow-left
+	left 0
+.mfp-arrow-left:after
+	border-right 17px solid #00aeef
+	margin-left 31px
+.mfp-arrow-left:before
+	margin-left 25px
+	border-right 27px solid tranparent
+
+.mfp-arrow-right
+	right 0
+.mfp-arrow-right:after
+	border-left 17px solid #00aeef
+	margin-left 39px
+.mfp-arrow-right:before
+	border-left 27px solid tranparent
+
+@import "./thanks.styl"

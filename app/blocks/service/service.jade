@@ -1,0 +1,445 @@
+section.service
+	.container
+		.row
+			.col-xs-12
+				div(class="block-title service__title")
+					div(class="block-title service__title-icon")
+						svg(width="12" height="12")
+							use(xlink:href="assets/images/icons.svg#icon-note2")
+					h4 <span>Услуги и цены</span>
+					h3 Решаем <span class="bold-text">любые проблемы с зубами</span><br> от лечения кариеса <span class="bold-text">до сложнейших имплантаций</span>
+		.row
+			.col-xs-12
+				.service__content
+					.row
+						.col-sm-3
+							ul.service__menu
+								li.service__menu-item
+									a.service__menu-link(href="#", data-trig="1").active <span class="blue">01.</span> Лечение зубов
+								li.service__menu-item
+									a.service__menu-link(href="#", data-trig="2") <span class="blue">02.</span> Удаление зубов
+								li.service__menu-item
+									a.service__menu-link(href="#", data-trig="3") <span class="blue">03.</span> Лечение дёсен
+								li.service__menu-item
+									a.service__menu-link(href="#", data-trig="4") <span class="blue">04.</span> Протезирование
+								li.service__menu-item
+									a.service__menu-link(href="#", data-trig="5") <span class="blue">05.</span> Имплантация
+								li.service__menu-item
+									a.service__menu-link(href="#", data-trig="6") <span class="blue">06.</span> Проф. гигиена
+								li.service__menu-item
+									a.service__menu-link(href="#", data-trig="7") <span class="blue">07.</span> Отбеливание
+								li.service__menu-item
+									a.service__menu-link(href="#", data-trig="8") <span class="blue">08.</span> Консультации
+								li.service__menu-item
+									a.service__menu-link(href="#", data-trig="9") <span class="blue">09.</span> Хирургия
+								li.service__menu-item
+									a.service__menu-link(href="#", data-trig="10") <span class="blue">10.</span> Брекеты, ортодонтия
+								li.service__menu-item
+									a.service__menu-link(href="#", data-trig="11") <span class="blue">11.</span> Анестезия
+								li.service__menu-item
+									a.service__menu-link(href="#", data-trig="12") <span class="blue">12.</span> Панорамные снимки
+								li.service__menu-item
+									a.service__menu-link(href="#", data-trig="13") <span class="blue">13.</span> Эстетич. стоматология
+								//- li.service__menu-item
+								//- 	a.service__menu-link(href="#", data-trig="14") <span class="blue">14.</span> Художеств. реставрация
+						.col-sm-8
+							//Лечение зубов
+							div(class="service__panel service__panel-1 toggled")
+								header(class="cd-panel-header")
+									a(href="#" class="back-btn service-close") <svg width="26" fill="#111" height="30"><use xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+									a(href="#0" class="cd-panel-close service-close") Close
+								.service__panel-container
+									.service__panel-block
+										h5= "Лечение Зубов от 900 руб:"
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Спасаем зубы, которые «приговорили к удалению»
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|48% пациентов приходят по рекомендации близких и друзей
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Уже более 650 жителей Ставрополя доверили нам лечение зубов
+									.service__panel-block
+										h5 Подробнее:
+										p
+											|Чтобы определить точную стоимость лечения, необходимо <br>узнать глубину поражения и канальность зуба. Мы зададим <br>несколько уточняющих вопросов и уже через 4 минуты назовём <br>стоимость лечения для Вашей ситуации в стоматологической <br>клинике «Дентарио»
+									.service__panel-block
+										h5 Популярные услуги по лечению дёсен:
+										ul.service__panel-prices.prices-list
+											- var le = 50
+												while le--
+													li.prices-list__item.row
+														.col-sm-6.col-xs-8 <svg width="12" height="11"><use xlink:href="assets/images/icons.svg#icon-check"></use></svg> <p>Лечение пародонтита аппаратом вектор</p>
+														.col-sm-2.col-xs-4 от *** руб
+														.col-sm-4.col-xs-12
+															a.prices-list__link(href="#").cost-panel-anchor рассчитать точную стомость
+										a.more-prices(href="#", data-toggled="false") Показать ещё
+										a.less-prices.hidden(href="#", data-toggled="false") Скрыть
+							//Удаление зубов
+							div(class="service__panel service__panel-2")
+								header(class="cd-panel-header")
+									a(href="#" class="back-btn service-close") <svg width="26" fill="#111" height="30"><use xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+									a(href="#0" class="cd-panel-close service-close") Close
+								.service__panel-container
+									.service__panel-block
+										h5= "Удаление Зубов от 350 руб:"
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Удаление зуба в нашей клинике осуществляется c применением <br>местной анестезии. Поэтому боль вы совсем не почувствуете
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Проводим деликатное удаление, чтобы сохранить кость и создать <br>комфортные условия для будущего восстановления зуба
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Уже более 230 жителей Ставрополя доверили нам удаление зубов
+									.service__panel-block
+										h5 Подробнее:
+										p
+											|Чтобы определить точную стоимость удаления, необходимо узнать <br>степень поражения зуба. Мы зададим несколько уточняющих вопросов<br> и уже через 4 минуты назовём стоимость удаления зубов для Вашей <br>ситуации в стоматологической клинике «Дентарио»
+									.service__panel-block
+										h5 Популярные услуги по лечению дёсен:
+										ul.service__panel-prices.prices-list
+											- var le = 50
+												while le--
+													li.prices-list__item.row
+														.col-sm-6.col-xs-8 <svg width="12" height="11"><use xlink:href="assets/images/icons.svg#icon-check"></use></svg> <p>Лечение пародонтита аппаратом вектор</p>
+														.col-sm-2.col-xs-4 от 400 руб
+														.col-sm-4.col-xs-12
+															a.prices-list__link(href="#").cost-panel-anchor рассчитать точную стомость
+										a.more-prices(href="#", data-toggled="false") Показать ещё
+										a.less-prices.hidden(href="#", data-toggled="false") Скрыть
+							//Лечение десен
+							div(class="service__panel service__panel-3")
+								header(class="cd-panel-header")
+									a(href="#" class="back-btn service-close") <svg width="26" fill="#111" height="30"><use xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+									a(href="#0" class="cd-panel-close service-close") Close
+								.service__panel-container
+									.service__panel-block
+										h5= "Лечение Дёсен от 200 руб:"
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Лечение болезней пародонта в нашей клинике осуществляется при <br>полном отсутствии боли. Все инвазивные стоматологические манипуляции <br>мы проводим под местной анестезией. У нас для этого есть все <br>необходимое: профессиональные знания, современные технологии, <br>специальные инструменты и оборудование
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Уже более 1 000 жителей Ставрополя доверили нам лечение дёсен
+									.service__panel-block
+										h5 Подробнее:
+										p
+											|Чтобы определить точную стоимость лечения дёсен, необходимо определить <br>степень повреждения десны и убедиться в отсутствии поражения зуба. <br>Мы зададим несколько уточняющих вопросов и уже через 4 минуты назовём <br>предварительную стоимость лечения дёсен для Вашей ситуации <br>в стоматологической клинике европейского уровня “Дентарио”
+									.service__panel-block
+										h5 Популярные услуги по лечению дёсен:
+										ul.service__panel-prices.prices-list
+											- var le = 50
+												while le--
+													li.prices-list__item.row
+														.col-sm-6.col-xs-8 <svg width="12" height="11"><use xlink:href="assets/images/icons.svg#icon-check"></use></svg> <p>Лечение пародонтита аппаратом вектор</p>
+														.col-sm-2.col-xs-4 от 400 руб
+														.col-sm-4.col-xs-12
+															a.prices-list__link(href="#").cost-panel-anchor рассчитать точную стомость
+										a.more-prices(href="#", data-toggled="false") Показать ещё
+										a.less-prices.hidden(href="#", data-toggled="false") Скрыть
+							//Протезирование
+							div(class="service__panel service__panel-4")
+								header(class="cd-panel-header")
+									a(href="#" class="back-btn service-close") <svg width="26" fill="#111" height="30"><use xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+									a(href="#0" class="cd-panel-close service-close") Close
+								.service__panel-container
+									.service__panel-block
+										h5= "Протезирование Зубов от 2 950 руб:"
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Наши врачи работают в тесном контакте с собственной лабораторией, <br>поэтому мы гарантируем наилучший результат в сжатые сроки и по<br> выгодной цене. А еще мы первыми освоили протезирование на <br>«живых зубах»
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Уже более 2 000 жителей Ставрополя доверили нам протезирование зубов
+									.service__panel-block
+										h5 Подробнее:
+										p
+											|Чтобы определить точную стоимость протезирования, необходимо определиться <br>с типом коронки (металлокерамика, керамика и т.д.) и объёмом подготовительных <br>работ. Мы зададим несколько уточняющих вопросов и уже через 4 минуты назовём <br>предварительную стоимость протезирования зубов для Вашей ситуации в <br>стоматологической клинике европейского уровня “Дентарио”
+									.service__panel-block
+										h5 Популярные услуги по лечению дёсен:
+										ul.service__panel-prices.prices-list
+											- var le = 50
+												while le--
+													li.prices-list__item.row
+														.col-sm-6.col-xs-8 <svg width="12" height="11"><use xlink:href="assets/images/icons.svg#icon-check"></use></svg> <p>Лечение пародонтита аппаратом вектор</p>
+														.col-sm-2.col-xs-4 от 400 руб
+														.col-sm-4.col-xs-12
+															a.prices-list__link(href="#").cost-panel-anchor рассчитать точную стомость
+										a.more-prices(href="#", data-toggled="false") Показать ещё
+										a.less-prices.hidden(href="#", data-toggled="false") Скрыть
+							//Имплантация
+							div(class="service__panel service__panel-5")
+								header(class="cd-panel-header")
+									a(href="#" class="back-btn service-close") <svg width="26" fill="#111" height="30"><use xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+									a(href="#0" class="cd-panel-close service-close") Close
+								.service__panel-container
+									.service__panel-block
+										h5= "Имплантация от 23 000 руб:"
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|В клинике “Дентарио” прием ведет ведущий челюстно-лицевой хирург
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Уже более 500 жителей Ставрополя доверили нам имплантацию зубов
+									.service__panel-block
+										h5 Подробнее:
+										p
+											|Чтобы определить точную стоимость имплантации, необходимо определиться с <br>типом имплантации (с подсадкой костного материала или без неё) и <br>объёмом подготовительных работ. Мы зададим несколько уточняющих вопросов <br>и уже через 4 минуты назовём предварительную стоимость лечения дёсен <br>для Вашей ситуации в стоматологической клинике европейского уровня <br>“Дентарио”
+									.service__panel-block
+										h5 Популярные услуги по лечению дёсен:
+										ul.service__panel-prices.prices-list
+											- var le = 50
+												while le--
+													li.prices-list__item.row
+														.col-sm-6.col-xs-8 <svg width="12" height="11"><use xlink:href="assets/images/icons.svg#icon-check"></use></svg> <p>Лечение пародонтита аппаратом вектор</p>
+														.col-sm-2.col-xs-4 от 400 руб
+														.col-sm-4.col-xs-12
+															a.prices-list__link(href="#").cost-panel-anchor рассчитать точную стомость
+										a.more-prices(href="#", data-toggled="false") Показать ещё
+										a.less-prices.hidden(href="#", data-toggled="false") Скрыть
+							//Проф. гигиена
+							div(class="service__panel service__panel-6")
+								header(class="cd-panel-header")
+									a(href="#" class="back-btn service-close") <svg width="26" fill="#111" height="30"><use xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+									a(href="#0" class="cd-panel-close service-close") Close
+								.service__panel-container
+									.service__panel-block
+										h5= "рофессиональная гигиена зубов и чистка от налёта от 1 300 руб:"
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Ультразвуковая чистка позволяет эффективно удалить зубные отложения, в <br>том числе в труднодоступных местах. Под воздействием ультразвуковой волны <br>плотный налет распадается, вычищаются мелкие трещины и верхний слой <br>эмали, так зубы становятся светлее, а очаги инфекции удаляются.<br>Профессиональная чистка – лучшая профилактика заболеваний полости рта
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Уже более 8 000 жителей Ставрополя доверили нам удаление зубов
+									.service__panel-block
+										h5 Подробнее:
+										p
+											|Чтобы определить точную стоимость профессиональной гигиены рта, <br>необходимо определиться с типом очищения (ультразвуковая, механическая <br>и т.д.). Мы зададим несколько уточняющих вопросов и уже через <br>4 минуты назовём предварительную стоимость профессиональной гигиены полости <br>рта для Вашей ситуации в стоматологической клинике европейского <br>уровня “Дентарио”
+
+									.service__panel-block
+										h5 Популярные услуги по лечению дёсен:
+										ul.service__panel-prices.prices-list
+											- var le = 50
+												while le--
+													li.prices-list__item.row
+														.col-sm-6.col-xs-8 <svg width="12" height="11"><use xlink:href="assets/images/icons.svg#icon-check"></use></svg> <p>Лечение пародонтита аппаратом вектор</p>
+														.col-sm-2.col-xs-4 от 400 руб
+														.col-sm-4.col-xs-12
+															a.prices-list__link(href="#").cost-panel-anchor рассчитать точную стомость
+										a.more-prices(href="#", data-toggled="false") Показать ещё
+										a.less-prices.hidden(href="#", data-toggled="false") Скрыть
+							//Отбеливание
+							div(class="service__panel service__panel-7")
+								header(class="cd-panel-header")
+									a(href="#" class="back-btn service-close") <svg width="26" fill="#111" height="30"><use xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+									a(href="#0" class="cd-panel-close service-close") Close
+								.service__panel-container
+									.service__panel-block
+										h5= "Отбеливание зубов от 1 000 руб:"
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|В Дентарио мы используем только безопасные методики и поэтому применяем <br>современную систему фотоотбеливания ZOOM3, которая позволяет высветлить <br>зубы за 1 процедуру, длительностью не больше часа, на 4-5 тона.
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Уже более 180 жителей Ставрополя доверили нам отбеливание зубов
+									.service__panel-block
+										h5 Подробнее:
+										p
+											|Чтобы определить точную стоимость отбеливания зубов, необходимо <br>определиться с типом отбеливания (opalescence, airflow, ZOOM3 ит.д.) и <br>количеством тонов высветления. Мы зададим несколько уточняющих вопросов и <br>уже через 4 минуты назовём стоимость отбеливания зубов для Вашей <br>ситуации в стоматологической клинике «Дентарио»
+									.service__panel-block
+										h5 Популярные услуги по лечению дёсен:
+										ul.service__panel-prices.prices-list
+											- var le = 50
+												while le--
+													li.prices-list__item.row
+														.col-sm-6.col-xs-8 <svg width="12" height="11"><use xlink:href="assets/images/icons.svg#icon-check"></use></svg> <p>Лечение пародонтита аппаратом вектор</p>
+														.col-sm-2.col-xs-4 от 400 руб
+														.col-sm-4.col-xs-12
+															a.prices-list__link(href="#").cost-panel-anchor рассчитать точную стомость
+										a.more-prices(href="#", data-toggled="false") Показать ещё
+										a.less-prices.hidden(href="#", data-toggled="false") Скрыть
+							//Консультация
+							div(class="service__panel service__panel-8")
+								header(class="cd-panel-header")
+									a(href="#" class="back-btn service-close") <svg width="26" fill="#111" height="30"><use xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+									a(href="#0" class="cd-panel-close service-close") Close
+								.service__panel-container
+									.service__panel-block
+										h5= "Консультации Бесплатно"
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Мы ценим ваше время, поэтому собрали все необходимое и передовое <br>диагностическое оборудование в одном месте, так вы можете получить любые <br>виды диагностики, что называется, не отходя от кресла врача-стоматолога. <br>Врачи стоматологии “Дентарио” – ведущие специалисты <br>региона с большим практическим опытом
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Уже более 770 жителей Ставрополя обратились к нам за консультацией
+									.service__panel-block
+										h5 Подробнее:
+										p
+											|Получите бесплатную консультацию по телефону прямо сейчас и подробную <br>консультацию специалиста в стоматологии. Мы зададим несколько уточняющих <br>вопросов по телефону и подробно ответим на Ваши вопросы. Запишитесь <br>на приём в стоматологическую клинику «Дентарио» прямо сейчас:
+									.service__panel-block
+										h5 Популярные услуги по лечению дёсен:
+										ul.service__panel-prices.prices-list
+											- var le = 50
+												while le--
+													li.prices-list__item.row
+														.col-sm-6.col-xs-8 <svg width="12" height="11"><use xlink:href="assets/images/icons.svg#icon-check"></use></svg> <p>Лечение пародонтита аппаратом вектор</p>
+														.col-sm-2.col-xs-4 от 400 руб
+														.col-sm-4.col-xs-12
+															a.prices-list__link(href="#").cost-panel-anchor рассчитать точную стомость
+										a.more-prices(href="#", data-toggled="false") Показать ещё
+										a.less-prices.hidden(href="#", data-toggled="false") Скрыть
+							//Хирургия
+							div(class="service__panel service__panel-9")
+								header(class="cd-panel-header")
+									a(href="#" class="back-btn service-close") <svg width="26" fill="#111" height="30"><use xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+									a(href="#0" class="cd-panel-close service-close") Close
+								.service__panel-container
+									.service__panel-block
+										h5= "Хирургия от 350 руб"
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Мы проводим любые хирургические операции в полости рта: имплантация <br>зубов, удаление зубов, костная пластика и другие
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Уже более 1 000 жителей Ставрополя доверили нам провести хирургию зубов и <br>полости рта
+									.service__panel-block
+										h5 Подробнее:
+										p
+											|Чтобы определить точную стоимость хирургии зубов, необходимо уточнить, <br>что именно нужно исправить: сделать протезирование или имплантацию либо <br>решить проблему с дёснами и т.д. Мы зададим несколько уточняющих вопросов <br>и уже через 4 минуты назовём стоимость отбеливания зубов для <br>Вашей ситуации в стоматологической клинике европейского уровня “Дентарио”
+									.service__panel-block
+										h5 Популярные услуги по лечению дёсен:
+										ul.service__panel-prices.prices-list
+											- var le = 50
+												while le--
+													li.prices-list__item.row
+														.col-sm-6.col-xs-8 <svg width="12" height="11"><use xlink:href="assets/images/icons.svg#icon-check"></use></svg> <p>Лечение пародонтита аппаратом вектор</p>
+														.col-sm-2.col-xs-4 от 400 руб
+														.col-sm-4.col-xs-12
+															a.prices-list__link(href="#").cost-panel-anchor рассчитать точную стомость
+										a.more-prices(href="#", data-toggled="false") Показать ещё
+										a.less-prices.hidden(href="#", data-toggled="false") Скрыть
+							//Брекеты
+							div(class="service__panel service__panel-10")
+								header(class="cd-panel-header")
+									a(href="#" class="back-btn service-close") <svg width="26" fill="#111" height="30"><use xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+									a(href="#0" class="cd-panel-close service-close") Close
+								.service__panel-container
+									.service__panel-block
+										h5= "Брекеты, Ортодонтия от 4 800 руб"
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|В своей практике мы используем металлические, керамические в цвет зубной <br>эмали и, так называемые, «сапфировые» или прозрачные брекеты известных <br>производителей «In-ovation», «Quick» и «Damon».
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Кроме этого мы можем предложить безбрекетное лечение специальной системой <br>капп, которые являются съемным аппаратом. Они абсолютно прозрачные и <br>комфортны для пациента
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Уже более 1 500 жителей Ставрополя доверили нам установку брекетов, исправление <br>прикуса, выравнивание зубов
+									.service__panel-block
+										h5 Подробнее:
+										p
+											|Чтобы определить точную стоимость брекетов, необходимо уточнить пожелания <br>и выбрать их тип (керамические, прозрачные) либо выбрать другие услуги по <br>выравниванию зубов и исправлению прикуса (например, безбрекетное лечение системой <br>капп). Мы зададим несколько уточняющих вопросов и уже через 4 минуты назовём <br>предварительную стоимость исправления прикуса брекетами ли каппами для <br>Вашей ситуации в стоматологической клинике европейского уровня “Дентарио”
+									.service__panel-block
+										h5 Популярные услуги по лечению дёсен:
+										ul.service__panel-prices.prices-list
+											- var le = 50
+												while le--
+													li.prices-list__item.row
+														.col-sm-6.col-xs-8 <svg width="12" height="11"><use xlink:href="assets/images/icons.svg#icon-check"></use></svg> <p>Лечение пародонтита аппаратом вектор</p>
+														.col-sm-2.col-xs-4 от 400 руб
+														.col-sm-4.col-xs-12
+															a.prices-list__link(href="#").cost-panel-anchor рассчитать точную стомость
+										a.more-prices(href="#", data-toggled="false") Показать ещё
+										a.less-prices.hidden(href="#", data-toggled="false") Скрыть
+							//Анестезия
+							div(class="service__panel service__panel-11")
+								header(class="cd-panel-header")
+									a(href="#" class="back-btn service-close") <svg width="26" fill="#111" height="30"><use xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+									a(href="#0" class="cd-panel-close service-close") Close
+								.service__panel-container
+									.service__panel-block
+										h5= "Анестезия от 45 руб"
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Используем самые современные и безопасные виды анестезии местного применения
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Уже более 770 жителей Ставрополя вылечили зубы в стоматологии Дентарио с анестезией
+									.service__panel-block
+										h5 Подробнее:
+										p
+											|Чтобы правильно выбрать анестезию у знать её точную стоимость, необходимо <br>определиться с типом анестезии. Мы зададим несколько уточняющих <br>вопросов и уже через 4 минуты назовём рекомендуемую анестезию для Вашей <br>ситуации и её точную стоимость в стоматологической клинике Дентарио
+									.service__panel-block
+										h5 Популярные услуги по лечению дёсен:
+										ul.service__panel-prices.prices-list
+											- var le = 50
+												while le--
+													li.prices-list__item.row
+														.col-sm-6.col-xs-8 <svg width="12" height="11"><use xlink:href="assets/images/icons.svg#icon-check"></use></svg> <p>Лечение пародонтита аппаратом вектор</p>
+														.col-sm-2.col-xs-4 от 400 руб
+														.col-sm-4.col-xs-12
+															a.prices-list__link(href="#").cost-panel-anchor рассчитать точную стомость
+										a.more-prices(href="#", data-toggled="false") Показать ещё
+										a.less-prices.hidden(href="#", data-toggled="false") Скрыть
+							//Снимки
+							div(class="service__panel service__panel-12")
+								header(class="cd-panel-header")
+									a(href="#" class="back-btn service-close") <svg width="26" fill="#111" height="30"><use xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+									a(href="#0" class="cd-panel-close service-close") Close
+								.service__panel-container
+									.service__panel-block
+										h5= "Снимки от 100 руб"
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Клиника оснащена самыми современными цифровыми аппаратами для прицельной <br>и панорамной рентгенографии известных кампаний Morita и Anvident
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Уже более 7 000 жителей Ставрополя сделали рентген и ортопантонограмму в <br>стоматологии “Дентарио”
+									.service__panel-block
+										h5 Подробнее:
+										p
+											|Запишитесь на рентген либо ортопантонограмму в стоматологическую клинику <br>европейского уровня “Дентарио” прямо сейчас
+									.service__panel-block
+										h5 Популярные услуги по лечению дёсен:
+										ul.service__panel-prices.prices-list
+											- var le = 50
+												while le--
+													li.prices-list__item.row
+														.col-sm-6.col-xs-8 <svg width="12" height="11"><use xlink:href="assets/images/icons.svg#icon-check"></use></svg> <p>Лечение пародонтита аппаратом вектор</p>
+														.col-sm-2.col-xs-4 от 400 руб
+														.col-sm-4.col-xs-12
+															a.prices-list__link(href="#").cost-panel-anchor рассчитать точную стомость
+										a.more-prices(href="#", data-toggled="false") Показать ещё
+										a.less-prices.hidden(href="#", data-toggled="false") Скрыть
+							//Эстетич. стом
+							div(class="service__panel service__panel-13")
+								header(class="cd-panel-header")
+									a(href="#" class="back-btn service-close") <svg width="26" fill="#111" height="30"><use xlink:href="assets/images/icons.svg#icon-angle"></use></svg> Назад на главную
+									a(href="#0" class="cd-panel-close service-close") Close
+								.service__panel-container
+									.service__panel-block
+										h5= "Эстетическая реставрация от 1500 руб"
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Поможем сделать Вашу улыбку еще красивее — ставим вининры, скайсы и <br>проводим эстетическую реставрацию зубов с использованием современного <br>оборудования.
+										p 
+											|<svg width="14" height="14"><use xlink:href="assets/images/icons.svg#icon-like2"></use></svg> 
+											|Уже более 380 жителей Ставрополя сделали свою улыбку красивее и <br>естественнее в стоматологи “Дентарио”
+									.service__panel-block
+										h5 Подробнее:
+										p
+											|Чтобы определить стоимость реставрации зубов, необходимо уточнить Вашу <br>ситуацию и пожелания. Мы зададим несколько уточняющих вопросов и уже <br>через 4 минуты назовём стоимость для Вашей ситуации в стоматологической <br>клинике европейского уровня “Дентарио”
+									.service__panel-block
+										h5 Популярные услуги по лечению дёсен:
+										ul.service__panel-prices.prices-list
+											- var le = 50
+												while le--
+													li.prices-list__item.row
+														.col-sm-6.col-xs-8 <svg width="12" height="11"><use xlink:href="assets/images/icons.svg#icon-check"></use></svg> <p>Лечение пародонтита аппаратом вектор</p>
+														.col-sm-2.col-xs-4 от 400 руб
+														.col-sm-4.col-xs-12
+															a.prices-list__link(href="#").cost-panel-anchor рассчитать точную стомость
+										a.more-prices(href="#", data-toggled="false") Показать ещё
+										a.less-prices.hidden(href="#", data-toggled="false") Скрыть

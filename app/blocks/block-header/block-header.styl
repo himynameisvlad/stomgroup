@@ -1,0 +1,35 @@
+.block-title
+  text-align center
+  color $main-clr
+
+  h4
+    margin-top 12px
+    position relative
+    min-width 300px
+    marign 0 auto
+    rems(14px)
+    span
+      position relative
+      &:after
+      &:before
+        content ''
+        display inline-block
+        width 60px
+        height 1px
+        background-color $main-clr
+        position relative
+        bottom 4px
+        +mobile()
+          width 15px
+      &:before
+        margin-right 25px
+      &:after
+        margin-left 25px
+
+
+  h3
+    margin-top 30px
+    rems(32px)
+
+  svg
+    fill $main-clr

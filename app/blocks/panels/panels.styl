@@ -1,0 +1,675 @@
+.auto-visible
+  .auto-modal
+    background-color rgba(4, 30, 52, .8)
+    display: block
+
+.auto-modal
+  position fixed
+  z-index 9999
+  top 0
+  left 0
+  right 0
+  bottom 0
+  width 100%
+  height 100%
+  background-color transparent
+  transition background-color .5s
+  display: none
+
+  &__container
+    max-width 821px
+    min-width 400px
+    height 490px
+    background-color: #e7e9e8
+    margin 80px auto 0
+    box-shadow 0 10px 50px rgba(0,0,0, 0.6)
+    background-image: url('../images/auto-bg.jpg')
+    background-repeat no-repeat
+    background-position left bottom
+    background-size contain
+    position relative
+    +below(500px)
+      background #e7e9e8
+      padding-top: 80px
+  
+  &__close
+    width 15px
+    height 15px
+    display: block
+    position: absolute
+    top: 20px
+    right 20px
+    &:after
+    &:before
+      content ''
+      width 1px
+      height 15px
+      background-color: #111
+      display: block
+      position: absolute
+    &:after
+      transform rotate(45deg)
+    &:before
+      transform rotate(-45deg)
+  
+  &__header
+    border 6px solid $main-clr
+    float left
+    width 400px
+    margin 80px 60% 0 40%
+    padding 40px 30px 20px 30px
+    position relative
+    +below(500px)
+      margin 0 auto
+      float none
+      padding 40px 10px 20px 10px
+      width 360px
+      
+    
+    h5
+      color $main-clr
+      line-height: 1.5
+      bold()
+      rems(21px)
+    p
+      color $main-clr
+      font-style italic
+      margin-top: 12px
+      line-height: 1.5
+      light()
+      rems(12px)
+    
+    svg
+      position: absolute
+      left -29px
+      top 20px
+  
+  &__form
+    width 400px
+    margin 20px 60% 0 40%
+    float left
+    +below(500px)
+      margin: 20px auto
+    
+    &-vars
+      +below(500px)
+        float left
+        padding-top 30px
+    
+    &-yes
+      background-color: $main-clr
+      color #fff
+      text-align: center
+      padding: 20px 130px
+      float left
+      box-shadow 0 5px 5px rgba(0,0,0,.1)
+      margin-top 30px
+      &:hover
+      &:focus
+        color #fff
+        text-decoration: none
+      +below(500px)
+        float none
+        padding: 20px 60px
+    &-no
+      padding: 20px 40px
+      float left
+      margin-top 30px
+      bold()
+      color $main-clr
+      +below(500px)
+        width 100%
+        float none
+        margin 0 auto
+    
+    &-self
+      
+      .field
+        background-color: #FFF
+        width 286px
+        overflow hidden
+        height 60px
+        border-radius 28px
+        position relative
+        margin 0 auto 10px
+        box-shadow 0 0 1px $main-clr
+        
+        label
+          color: $main-clr
+          text-align: left;
+          position: absolute;
+          top: 0px;
+          left: 20px;
+          right: 0px;
+          bottom: 0px;
+          line-height: 60px;
+          border: 0px none;
+          padding: 0px;
+          margin: 0px;
+          width: 140%;
+          background-color: transparent;
+          rems(14px)
+          font-family: firasans-light,sans-serif;
+      input
+        background-color transparent
+        position: absolute;
+        top: 0px;
+        left: 20px;
+        right: 0px;
+        bottom: 0px;
+        line-height: 60px;
+        border: 0px none;
+        padding: 0px;
+        margin: 0px;
+        width: 140%;
+        border 0
+        outline 0
+        box-shadow none
+      button
+        border 0
+        outline 0
+        color #fff
+        background-color: $main-clr
+        width 286px
+        overflow hidden
+        height 60px
+        margin 0 auto
+        display: block
+
+
+
+.cd-main-content
+  text-align: center;
+
+.cd-main-content h1
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: #64788c;
+  padding: 4em 0;
+
+.cd-main-content .cd-btn
+  position: relative;
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: #89ba2c;
+  color: #ffffff;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-radius: 50em;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 0 5px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+
+.no-touch .cd-main-content .cd-btn:hover
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 0 20px rgba(0, 0, 0, 0.3);
+
+@media only screen and (min-width: 1170px)
+  .cd-main-content h1
+    font-size: 32px;
+    font-size: 2rem;
+
+
+
+.cd-panel
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index 999
+  visibility: hidden;
+  -webkit-transition: visibility 0s 0.6s;
+  -moz-transition: visibility 0s 0.6s;
+  transition: visibility 0s 0.6s;
+
+.cd-panel::after
+  /* overlay layer */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: background 0.3s 0.3s;
+  -moz-transition: background 0.3s 0.3s;
+  transition: background 0.3s 0.3s;
+
+.cd-panel.is-visible
+  visibility: visible;
+  -webkit-transition: visibility 0s 0s;
+  -moz-transition: visibility 0s 0s;
+  transition: visibility 0s 0s;
+
+.cd-panel.is-visible::after
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transition: background 0.3s 0s;
+  -moz-transition: background 0.3s 0s;
+  transition: background 0.3s 0s;
+
+.service__panel.mob .cd-panel-close::before
+.cd-panel.is-visible .cd-panel-close::before
+  -webkit-animation: cd-close-1 0.6s 0.3s;
+  -moz-animation: cd-close-1 0.6s 0.3s;
+  animation: cd-close-1 0.6s 0.3s;
+
+.service__panel.mob .cd-panel-close::after
+.cd-panel.is-visible .cd-panel-close::after
+  -webkit-animation: cd-close-2 0.6s 0.3s;
+  -moz-animation: cd-close-2 0.6s 0.3s;
+  animation: cd-close-2 0.6s 0.3s;
+
+
+@-webkit-keyframes cd-close-1
+  0%, 50%
+    -webkit-transform: rotate(0);
+
+  100%
+    -webkit-transform: rotate(45deg);
+
+
+@-moz-keyframes cd-close-1
+  0%, 50%
+    -moz-transform: rotate(0);
+
+  100%
+    -moz-transform: rotate(45deg);
+
+
+@keyframes cd-close-1
+  0%, 50%
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+
+  100%
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+
+@-webkit-keyframes cd-close-2
+  0%, 50%
+    -webkit-transform: rotate(0);
+
+  100%
+    -webkit-transform: rotate(-45deg);
+
+
+@-moz-keyframes cd-close-2
+  0%, 50%
+    -moz-transform: rotate(0);
+
+  100%
+    -moz-transform: rotate(-45deg);
+
+
+@keyframes cd-close-2
+  0%, 50%
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+
+  100%
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+
+
+.cd-panel-header
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background: #fff;
+  z-index: 999;
+  -webkit-transition: top 0.3s 0s;
+  -moz-transition: top 0.3s 0s;
+  transition: top 0.3s 0s;
+
+.cd-panel-header h1
+  font-weight: bold;
+  color: #89ba2c;
+  padding-left: 5%;
+
+.service__panel .cd-panel-header
+.from-right .cd-panel-header
+.from-left .cd-panel-header
+  top: -50px;
+
+.service__panel .cd-panel-header
+.from-right .cd-panel-header
+  right: 0;
+
+.from-left .cd-panel-header
+  left: 0;
+
+.toggled .cd-panel-header
+.is-visible .cd-panel-header
+  top: 0;
+  -webkit-transition: top 0.3s 0.3s;
+  -moz-transition: top 0.3s 0.3s;
+  transition: top 0.3s 0.3s;
+
+
+
+
+.cd-panel-close
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 60px;
+  /* image replacement */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+
+.cd-panel-close::before
+.cd-panel-close::after
+  content ''
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  height: 1px;
+  width: 20px;
+  background-color: #424f5c;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+.cd-panel-close::before
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+.cd-panel-close::after
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+
+.no-touch .cd-panel-close:hover
+  background-color: #424f5c;
+
+.no-touch .cd-panel-close:hover::before, .no-touch .cd-panel-close:hover::after
+  background-color: #ffffff;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+
+.no-touch .cd-panel-close:hover::before
+  -webkit-transform: rotate(220deg);
+  -moz-transform: rotate(220deg);
+  -ms-transform: rotate(220deg);
+  -o-transform: rotate(220deg);
+  transform: rotate(220deg);
+
+.no-touch .cd-panel-close:hover::after
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+
+
+.cd-panel-container
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: #fff;
+  z-index: 19;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+
+.from-right .cd-panel-container
+  right: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  -ms-transform: translate3d(100%, 0, 0);
+  -o-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+
+.from-left .cd-panel-container
+  left: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+
+.is-visible .cd-panel-container
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+
+
+
+.cd-panel-content
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 70px 5%;
+  overflow: auto;
+  overflow-y: scroll;
+  /* smooth scrolling on touch devices */
+  -webkit-overflow-scrolling: touch;
+
+.cd-panel-content p
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #424f5c;
+  line-height: 1.4;
+  margin: 2em 0;
+
+.cd-panel-content p:first-of-type
+  margin-top: 0;
+
+@media only screen and (min-width: 768px)
+  .cd-panel-content p
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.6;
+
+.back-btn
+  color #111
+  rems(14px)
+  &:hover
+    color inherit
+  svg
+    position relative
+    top 10px
+
+.service__panel.mob
+  z-index 99
+
+.cd-panel-container
+  .block-title
+    margin-top 40px
+
+  h3
+    line-height 1.4
+    margin-bottom 26px
+    rems(24px)
+    +mobile()
+      rems(18px)
+
+  .sub-title
+    color #111
+    margin-bottom 30px
+    line-height 1.5
+    rems(16px)
+
+  .field
+    position relative
+    height 55px
+    width 420px
+    border 1px solid #d6d6d6
+    margin 0 auto
+    border-radius: 28px
+    box-shadow inset 0 2px 5px rgba(0,0,0,.2)
+    margin-bottom 12px
+    overflow hidden
+    +mobile()
+      width 300px
+
+  label
+  input
+    color #111
+    text-align left
+    position absolute
+    top 0
+    left 20px
+    right 0
+    bottom 0
+    line-height 55px
+    border 0
+    padding 0
+    margin 0
+    width 90%
+    background-color transparent
+    rems(12px)
+    light()
+
+    span
+      font-style italic
+      color #888888
+
+  button
+    width 420px
+    height 55px
+    margin 0 auto
+    display block
+    background-color $main-clr
+    border: 0
+    color #fff
+    border-radius: 28px
+    semi-bold()
+    rems(14px)
+    +mobile()
+      width 300px
+
+  p.post-form
+    color #a2a2a2
+    margin-top 38px
+    text-align center
+    font-style italic
+    rems(11px)
+
+
+//Menu
+
+.cd-panel.menu-panel
+.cd-panel.submenu-panel
+  +above(768px)
+    width 100%
+
+  .cd-panel-header
+    background-color transparent
+    +above(768px)
+      width 50%
+
+    .cd-panel-close
+      &:after
+      &:before
+        background-color #fff
+        height 2px
+
+  .cd-panel-container
+    +above(768px)
+      width 50%
+    background: -moz-linear-gradient(45deg,  rgba(0,174,239,0.96) 0%, rgba(9,126,170,0.96) 100%);
+    background: -webkit-linear-gradient(45deg,  rgba(0,174,239,0.96) 0%,rgba(9,126,170,0.96) 100%);
+    background: linear-gradient(45deg,  rgba(0,174,239,0.96) 0%,rgba(9,126,170,0.96) 100%);
+
+
+  .cd-panel-content
+    overflow-y auto
+    padding 30px 0 0
+
+.main-menu
+
+  &__item
+    display block
+    width 100%
+
+  &__link
+    display block
+    padding 12px 0 12px 70px
+    +mobile()
+      padding 12px 0 12px 20px
+      rems(14px)
+    width 100%
+    color #fff
+    light()
+    rems(18px)
+    &:hover
+    &:focus
+      color #fff
+    &.active
+      background-color rgba(0,174,239, .96)
+
+    &-icon
+      position relative
+      margin-right 8px
+      top 1px
+
+
+.cd-panel.submenu-panel
+
+  .cd-panel-container
+    background rgba(0,174,239,.96)
+
+
+.law-panel
+  .cd-panel-content
+    padding-top 40px
+
+    p
+      rems(13px)
+      light()
+
+  h4
+    margin-bottom 50px
+
+  .lic
+    margin-bottom 0
+
+  .gallery > a
+    color #111
+    border-bottom 1px dotted #111
+    light()
+    rems(13px)
+    &:hover
+      border-bottom 0

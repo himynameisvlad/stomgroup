@@ -1,0 +1,76 @@
+.thanks-page
+	
+	.cd-panel-header
+		box-shadow none
+		position static
+	
+	.ghost-btn.blue
+		margin 0 auto
+		padding 30px 0
+		text-align: center
+		display: block
+		width 300px
+		margin-top 30px
+	
+.city
+	margin-top: 90px
+	background: url(../images/footer-bg.jpg) no-repeat #00aeef;
+	padding: 70px 0 80px
+	background-attachment: fixed
+	
+	h5
+		color #fff
+		text-align: center
+		margin-bottom: 40px
+		bold()
+		rems(24px)
+
+	img
+		display: block
+		margin: 50px auto 0
+	
+	p
+		color #fff
+		text-align: center
+		resm(24px)
+		&:nth-of-type(2)
+			margin-top: 40px
+	
+	.ghost-btn
+		display: block
+		margin: 0 auto
+		text-align center
+		padding: 30px 0
+		width 300px
+		margin-top: 30px
+	
+	.map__container
+		margin-top 200px
+		height 580px
+		+below(560px)
+			height 300px
+		
+		iframe
+			width 100%
+			height 580px
+			+below(560px)
+				height 300px
+	
+	.thanks-contacts
+		.btn
+			margin-top: 40px
+		.thanks-contacts-list
+			text-align: center
+			margin-top: 20px
+			li
+				display: inline-block
+				margin 0 40px
+				width 300px
+				+below(992px)
+					& + li
+						margin-top: 40px
+				p
+					line-height: 1.5
+		svg
+			fill #fff
+			margin 0 auto 20px
